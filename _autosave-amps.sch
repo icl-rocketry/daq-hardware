@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:daq-hardware-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -171,4 +172,6 @@ Wire Wire Line
 	3900 3500 4100 3500
 Wire Wire Line
 	4100 3500 4100 3650
+Text HLabel 6850 3350 2    50   Input ~ 0
+EN
 $EndSCHEMATC
