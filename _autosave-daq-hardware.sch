@@ -367,11 +367,11 @@ Wire Wire Line
 Text Label 7200 2000 2    50   ~ 0
 GPIO0
 $Sheet
-S 8250 4450 1200 550 
+S 8250 4300 1200 550 
 U 5DAADE1C
 F0 "amps" 50
 F1 "amps.sch" 50
-F2 "EN" I L 8250 4550 50 
+F2 "EN" I L 8250 4400 50 
 $EndSheet
 $Sheet
 S 8250 5250 1200 500 
