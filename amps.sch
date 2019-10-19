@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:daq-hardware-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -14,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L RMTS-cache:RMTS-rescue_MCP6N11-Mine-RMTS-rescue-RMTS-rescue U?
-U 1 1 5DAB7967
-P 5950 3350
-F 0 "U?" H 5950 3575 50  0000 C CNN
-F 1 "MCP6N11" H 5950 3484 50  0000 C CNN
-F 2 "" H 5950 3350 50  0001 C CNN
-F 3 "" H 5950 3350 50  0001 C CNN
-	1    5950 3350
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:Screw_Terminal_01x04 J?
 U 1 1 5DAB817A
@@ -60,8 +48,6 @@ F 3 "" H 5400 4200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5400 4200 5400 3650
-Wire Wire Line
-	5400 3650 5550 3650
 $Comp
 L Device:R R?
 U 1 1 5DABEACC
@@ -114,14 +100,8 @@ Wire Wire Line
 	6550 4600 6350 4600
 Connection ~ 6350 4600
 Wire Wire Line
-	6350 3550 6550 3550
-Wire Wire Line
 	6550 3550 6550 3650
 Connection ~ 6550 3650
-Wire Wire Line
-	6350 3450 6850 3450
-Wire Wire Line
-	6350 3350 6850 3350
 $Comp
 L Device:C C?
 U 1 1 5DAC169D
@@ -145,16 +125,7 @@ Wire Wire Line
 	4700 3300 5150 3300
 Wire Wire Line
 	5150 3300 5150 3450
-Wire Wire Line
-	5150 3450 5550 3450
 Connection ~ 4700 3300
-Wire Wire Line
-	4700 3600 5550 3600
-Wire Wire Line
-	5550 3600 5550 3550
-Connection ~ 4700 3600
-Wire Wire Line
-	5550 3350 5300 3350
 $Comp
 L power:GND #PWR?
 U 1 1 5DAC322E
@@ -174,4 +145,34 @@ Wire Wire Line
 	4100 3500 4100 3650
 Text HLabel 6850 3350 2    50   Input ~ 0
 EN
+$Comp
+L custom_lib:MCP6N11 U1
+U 1 1 5DAC9BC3
+P 5900 3500
+F 0 "U1" H 5950 3875 50  0000 C CNN
+F 1 "MCP6N11" H 5950 3800 50  0000 C CNN
+F 2 "" H 5900 3750 50  0001 C CNN
+F 3 "" H 5900 3750 50  0001 C CNN
+	1    5900 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3350 6850 3350
+Wire Wire Line
+	6350 3450 6850 3450
+Wire Wire Line
+	6350 3550 6550 3550
+Wire Wire Line
+	5150 3450 5400 3450
+Wire Wire Line
+	4700 3600 5000 3600
+Wire Wire Line
+	5000 3600 5000 3550
+Wire Wire Line
+	5000 3550 5400 3550
+Connection ~ 4700 3600
+Wire Wire Line
+	5400 3350 5400 3200
+Wire Wire Line
+	5400 3200 5250 3200
 $EndSCHEMATC

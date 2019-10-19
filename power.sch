@@ -1,0 +1,297 @@
+EESchema Schematic File Version 4
+LIBS:daq-hardware-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Switching:TPS62160DGK U?
+U 1 1 5DAB361D
+P 6250 2600
+F 0 "U?" H 6250 3167 50  0000 C CNN
+F 1 "TPS62160DGK" H 6250 3076 50  0000 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 6400 2250 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps62160.pdf" H 6250 3150 50  0001 C CNN
+	1    6250 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5DAB5D87
+P 5550 2300
+F 0 "#PWR?" H 5550 2150 50  0001 C CNN
+F 1 "VDD" H 5567 2473 50  0000 C CNN
+F 2 "" H 5550 2300 50  0001 C CNN
+F 3 "" H 5550 2300 50  0001 C CNN
+	1    5550 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2300 5800 2300
+Wire Wire Line
+	5800 2300 5800 2400
+Wire Wire Line
+	5800 2400 5850 2400
+Connection ~ 5800 2300
+Wire Wire Line
+	5800 2300 5850 2300
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5DAB6ED0
+P 3750 2350
+F 0 "J?" H 3668 2567 50  0000 C CNN
+F 1 "Conn_01x02" H 3668 2476 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 3750 2350 50  0001 C CNN
+F 3 "~" H 3750 2350 50  0001 C CNN
+	1    3750 2350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5DAB7829
+P 3750 2950
+F 0 "J?" H 3668 3167 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 3668 3076 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 3750 2950 50  0001 C CNN
+F 3 "~" H 3750 2950 50  0001 C CNN
+	1    3750 2950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2950 4100 2950
+Wire Wire Line
+	4100 2450 3950 2450
+$Comp
+L power:VDD #PWR?
+U 1 1 5DAB8713
+P 4100 2350
+F 0 "#PWR?" H 4100 2200 50  0001 C CNN
+F 1 "VDD" H 4117 2523 50  0000 C CNN
+F 2 "" H 4100 2350 50  0001 C CNN
+F 3 "" H 4100 2350 50  0001 C CNN
+	1    4100 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2350 4100 2350
+$Comp
+L Device:C C?
+U 1 1 5DAB94FA
+P 5200 2600
+F 0 "C?" H 5315 2646 50  0000 L CNN
+F 1 "10u" H 5315 2555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 5238 2450 50  0001 C CNN
+F 3 "~" H 5200 2600 50  0001 C CNN
+	1    5200 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2300 5200 2300
+Wire Wire Line
+	5200 2300 5200 2450
+Connection ~ 5550 2300
+$Comp
+L power:GND #PWR?
+U 1 1 5DABE1CD
+P 5750 3200
+F 0 "#PWR?" H 5750 2950 50  0001 C CNN
+F 1 "GND" H 5755 3027 50  0000 C CNN
+F 2 "" H 5750 3200 50  0001 C CNN
+F 3 "" H 5750 3200 50  0001 C CNN
+	1    5750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DABEACB
+P 5200 3200
+F 0 "#PWR?" H 5200 2950 50  0001 C CNN
+F 1 "GND" H 5205 3027 50  0000 C CNN
+F 2 "" H 5200 3200 50  0001 C CNN
+F 3 "" H 5200 3200 50  0001 C CNN
+	1    5200 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2750 5200 3200
+Wire Wire Line
+	5200 3200 5750 3200
+Connection ~ 5200 3200
+Wire Wire Line
+	5750 3200 6350 3200
+Wire Wire Line
+	6350 3200 6350 3000
+Connection ~ 5750 3200
+Wire Wire Line
+	5750 3200 5750 3000
+Wire Wire Line
+	5750 3000 6250 3000
+Wire Wire Line
+	5200 3200 4400 3200
+Wire Wire Line
+	4400 3200 4400 3050
+Wire Wire Line
+	4400 3050 3950 3050
+$Comp
+L power:GND #PWR?
+U 1 1 5DAC119C
+P 4100 2450
+F 0 "#PWR?" H 4100 2200 50  0001 C CNN
+F 1 "GND" H 4105 2277 50  0000 C CNN
+F 2 "" H 4100 2450 50  0001 C CNN
+F 3 "" H 4100 2450 50  0001 C CNN
+	1    4100 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5DAC17A9
+P 4100 2950
+F 0 "#PWR?" H 4100 2800 50  0001 C CNN
+F 1 "VDD" H 4117 3123 50  0000 C CNN
+F 2 "" H 4100 2950 50  0001 C CNN
+F 3 "" H 4100 2950 50  0001 C CNN
+	1    4100 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 2500 7150 2500
+Wire Wire Line
+	5850 2700 5600 2700
+Text Label 5600 2700 0    50   ~ 0
+PG
+Wire Wire Line
+	7800 2900 7800 2850
+$Comp
+L Device:R R?
+U 1 1 5DAB9AC4
+P 8100 2900
+F 0 "R?" V 7893 2900 50  0000 C CNN
+F 1 "100k" V 7984 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8030 2900 50  0001 C CNN
+F 3 "~" H 8100 2900 50  0001 C CNN
+	1    8100 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DABB368
+P 8400 2900
+F 0 "#PWR?" H 8400 2650 50  0001 C CNN
+F 1 "GND" H 8405 2727 50  0000 C CNN
+F 2 "" H 8400 2900 50  0001 C CNN
+F 3 "" H 8400 2900 50  0001 C CNN
+	1    8400 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DABF022
+P 8400 2550
+F 0 "C?" H 8515 2596 50  0000 L CNN
+F 1 "22u" H 8515 2505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 8438 2400 50  0001 C CNN
+F 3 "~" H 8400 2550 50  0001 C CNN
+	1    8400 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DAC0813
+P 8400 2150
+F 0 "#PWR?" H 8400 2000 50  0001 C CNN
+F 1 "+3V3" H 8415 2323 50  0000 C CNN
+F 2 "" H 8400 2150 50  0001 C CNN
+F 3 "" H 8400 2150 50  0001 C CNN
+	1    8400 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5DABCD6A
+P 7000 2300
+F 0 "L?" H 7000 2515 50  0000 C CNN
+F 1 "2u2" H 7000 2424 50  0000 C CNN
+F 2 "" H 7000 2423 50  0001 C CNN
+F 3 "~" H 7000 2300 50  0001 C CNN
+	1    7000 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 2300 6750 2300
+Wire Wire Line
+	7250 2300 7300 2300
+Connection ~ 7300 2300
+$Comp
+L Device:R R?
+U 1 1 5DACCDF7
+P 7300 2550
+F 0 "R?" H 7370 2596 50  0000 L CNN
+F 1 "100k" H 7370 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7230 2550 50  0001 C CNN
+F 3 "~" H 7300 2550 50  0001 C CNN
+	1    7300 2550
+	1    0    0    -1  
+$EndComp
+Text Label 7550 2700 0    50   ~ 0
+PG
+Wire Wire Line
+	7300 2700 7550 2700
+Wire Wire Line
+	7150 2500 7150 2900
+Connection ~ 7800 2900
+Wire Wire Line
+	7800 2900 7950 2900
+Wire Wire Line
+	7650 2900 7800 2900
+Wire Wire Line
+	7150 2900 7800 2900
+Wire Wire Line
+	8400 2700 8400 2900
+Wire Wire Line
+	8250 2900 8400 2900
+Connection ~ 8400 2900
+Wire Wire Line
+	8400 2150 8400 2300
+Connection ~ 8400 2300
+Wire Wire Line
+	8400 2300 8400 2400
+Wire Wire Line
+	7300 2300 7300 2400
+Wire Wire Line
+	6650 2400 7300 2400
+Connection ~ 7300 2400
+$Comp
+L Device:R R?
+U 1 1 5DAC6397
+P 7800 2550
+F 0 "R?" H 7593 2550 50  0000 C CNN
+F 1 "312k5" H 7684 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7730 2550 50  0001 C CNN
+F 3 "~" H 7800 2550 50  0001 C CNN
+	1    7800 2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7300 2300 7800 2300
+Wire Wire Line
+	7800 2400 7800 2300
+Connection ~ 7800 2300
+Wire Wire Line
+	7800 2300 8400 2300
+Wire Wire Line
+	7800 2700 7800 2850
+Connection ~ 7800 2850
+Wire Wire Line
+	7800 2850 7800 2900
+$EndSCHEMATC

@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name daq-hardware-cache)(type Legacy)(uri ${KIPRJMOD}/daq-hardware-cache.lib)(options "")(descr ""))
+  (lib (name daq-hardware-rescue)(type Legacy)(uri ${KIPRJMOD}/daq-hardware-rescue.lib)(options "")(descr ""))
+  (lib (name custom_lib)(type Legacy)(uri /Users/han/Desktop/custom_lib.lib)(options "")(descr ""))
 )
