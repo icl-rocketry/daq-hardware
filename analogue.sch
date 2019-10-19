@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:analogue-cache
+LIBS:daq-hardware-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -277,7 +277,7 @@ AIN2
 Wire Wire Line
 	4800 3850 4800 4100
 $Comp
-L daq-hardware-cache:ADS1219 U?
+L daq-hardware-rescue:ADS1219-daq-hardware-cache U?
 U 1 1 5DAAE850
 P 4350 3500
 F 0 "U?" H 4350 4115 50  0000 C CNN
