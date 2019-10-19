@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name daq-hardware-rescue)(type Legacy)(uri ${KIPRJMOD}/daq-hardware-rescue.lib)(options "")(descr ""))
+)
