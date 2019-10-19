@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -686,4 +686,10 @@ Text Label 2700 6550 2    50   ~ 0
 RESET
 Text Label 2700 7200 2    50   ~ 0
 GPIO0
+$Sheet
+S 9250 5850 1250 500 
+U 5DAB176F
+F0 "thermocouples" 50
+F1 "thermocouples.sch" 50
+$EndSheet
 $EndSCHEMATC
