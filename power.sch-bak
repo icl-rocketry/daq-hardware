@@ -1,0 +1,320 @@
+EESchema Schematic File Version 4
+LIBS:daq-hardware-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Switching:TPS62160DGK U?
+U 1 1 5DAB361D
+P 6250 2600
+F 0 "U?" H 6250 3167 50  0000 C CNN
+F 1 "TPS62160DGK" H 6250 3076 50  0000 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 6400 2250 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps62160.pdf" H 6250 3150 50  0001 C CNN
+	1    6250 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5DAB5D87
+P 5550 2300
+F 0 "#PWR?" H 5550 2150 50  0001 C CNN
+F 1 "VDD" H 5567 2473 50  0000 C CNN
+F 2 "" H 5550 2300 50  0001 C CNN
+F 3 "" H 5550 2300 50  0001 C CNN
+	1    5550 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2300 5800 2300
+Wire Wire Line
+	5800 2300 5800 2400
+Wire Wire Line
+	5800 2400 5850 2400
+Connection ~ 5800 2300
+Wire Wire Line
+	5800 2300 5850 2300
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5DAB6ED0
+P 3750 2350
+F 0 "J?" H 3668 2567 50  0000 C CNN
+F 1 "Conn_01x02" H 3668 2476 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 3750 2350 50  0001 C CNN
+F 3 "~" H 3750 2350 50  0001 C CNN
+	1    3750 2350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5DAB7829
+P 3750 2950
+F 0 "J?" H 3668 3167 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 3668 3076 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 3750 2950 50  0001 C CNN
+F 3 "~" H 3750 2950 50  0001 C CNN
+	1    3750 2950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2950 4100 2950
+Wire Wire Line
+	4100 2450 3950 2450
+$Comp
+L power:VDD #PWR?
+U 1 1 5DAB8713
+P 4100 2350
+F 0 "#PWR?" H 4100 2200 50  0001 C CNN
+F 1 "VDD" H 4117 2523 50  0000 C CNN
+F 2 "" H 4100 2350 50  0001 C CNN
+F 3 "" H 4100 2350 50  0001 C CNN
+	1    4100 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2350 4100 2350
+$Comp
+L Device:C C?
+U 1 1 5DAB94FA
+P 5200 2600
+F 0 "C?" H 5315 2646 50  0000 L CNN
+F 1 "10u" H 5315 2555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 5238 2450 50  0001 C CNN
+F 3 "~" H 5200 2600 50  0001 C CNN
+	1    5200 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2300 5200 2300
+Wire Wire Line
+	5200 2300 5200 2450
+Connection ~ 5550 2300
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5DABCD6A
+P 7200 2300
+F 0 "L?" H 7200 2515 50  0000 C CNN
+F 1 "2u2" H 7200 2424 50  0000 C CNN
+F 2 "" H 7200 2423 50  0001 C CNN
+F 3 "~" H 7200 2300 50  0001 C CNN
+	1    7200 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 2300 6950 2300
+$Comp
+L power:GND #PWR?
+U 1 1 5DABE1CD
+P 5750 3200
+F 0 "#PWR?" H 5750 2950 50  0001 C CNN
+F 1 "GND" H 5755 3027 50  0000 C CNN
+F 2 "" H 5750 3200 50  0001 C CNN
+F 3 "" H 5750 3200 50  0001 C CNN
+	1    5750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DABEACB
+P 5200 3200
+F 0 "#PWR?" H 5200 2950 50  0001 C CNN
+F 1 "GND" H 5205 3027 50  0000 C CNN
+F 2 "" H 5200 3200 50  0001 C CNN
+F 3 "" H 5200 3200 50  0001 C CNN
+	1    5200 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2750 5200 3200
+Wire Wire Line
+	5200 3200 5750 3200
+Connection ~ 5200 3200
+Wire Wire Line
+	5750 3200 6350 3200
+Wire Wire Line
+	6350 3200 6350 3000
+Connection ~ 5750 3200
+Wire Wire Line
+	5750 3200 5750 3000
+Wire Wire Line
+	5750 3000 6250 3000
+Wire Wire Line
+	5200 3200 4400 3200
+Wire Wire Line
+	4400 3200 4400 3050
+Wire Wire Line
+	4400 3050 3950 3050
+Wire Wire Line
+	6650 2400 7450 2400
+Wire Wire Line
+	7450 2400 7450 2300
+$Comp
+L Device:R R?
+U 1 1 5DAC042B
+P 7700 2450
+F 0 "R?" H 7770 2496 50  0000 L CNN
+F 1 "100k" H 7770 2405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7630 2450 50  0001 C CNN
+F 3 "~" H 7700 2450 50  0001 C CNN
+	1    7700 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DAC119C
+P 4100 2450
+F 0 "#PWR?" H 4100 2200 50  0001 C CNN
+F 1 "GND" H 4105 2277 50  0000 C CNN
+F 2 "" H 4100 2450 50  0001 C CNN
+F 3 "" H 4100 2450 50  0001 C CNN
+	1    4100 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5DAC17A9
+P 4100 2950
+F 0 "#PWR?" H 4100 2800 50  0001 C CNN
+F 1 "VDD" H 4117 3123 50  0000 C CNN
+F 2 "" H 4100 2950 50  0001 C CNN
+F 3 "" H 4100 2950 50  0001 C CNN
+	1    4100 2950
+	1    0    0    -1  
+$EndComp
+Connection ~ 7450 2300
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5DAC46A6
+P 8300 2500
+F 0 "J?" H 8380 2492 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 8380 2401 50  0000 L CNN
+F 2 "" H 8300 2500 50  0001 C CNN
+F 3 "~" H 8300 2500 50  0001 C CNN
+	1    8300 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5DAC5215
+P 8100 2400
+F 0 "#PWR?" H 8100 2250 50  0001 C CNN
+F 1 "VDD" H 8117 2573 50  0000 C CNN
+F 2 "" H 8100 2400 50  0001 C CNN
+F 3 "" H 8100 2400 50  0001 C CNN
+	1    8100 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2400 8100 2500
+Wire Wire Line
+	7700 2600 8100 2600
+$Comp
+L Device:R R?
+U 1 1 5DAC6397
+P 9450 2550
+F 0 "R?" V 9243 2550 50  0000 C CNN
+F 1 "R" V 9334 2550 50  0000 C CNN
+F 2 "" V 9380 2550 50  0001 C CNN
+F 3 "~" H 9450 2550 50  0001 C CNN
+	1    9450 2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6650 2500 7450 2500
+Wire Wire Line
+	7450 2500 7450 2750
+Wire Wire Line
+	5850 2700 5600 2700
+Text Label 5600 2700 0    50   ~ 0
+PG
+Text Label 7950 2600 0    50   ~ 0
+PG
+Wire Wire Line
+	7450 2300 7550 2300
+Wire Wire Line
+	7450 2750 9450 2750
+Wire Wire Line
+	9450 2750 9450 2700
+Wire Wire Line
+	9450 2400 9450 2100
+Wire Wire Line
+	9450 2100 7550 2100
+Wire Wire Line
+	7550 2100 7550 2300
+Connection ~ 7550 2300
+Wire Wire Line
+	7550 2300 7700 2300
+$Comp
+L Device:R R?
+U 1 1 5DAB9AC4
+P 9900 2750
+F 0 "R?" V 9693 2750 50  0000 C CNN
+F 1 "R" V 9784 2750 50  0000 C CNN
+F 2 "" V 9830 2750 50  0001 C CNN
+F 3 "~" H 9900 2750 50  0001 C CNN
+	1    9900 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9450 2750 9750 2750
+Connection ~ 9450 2750
+Wire Wire Line
+	10050 2750 10350 2750
+$Comp
+L power:GND #PWR?
+U 1 1 5DABB368
+P 10350 2750
+F 0 "#PWR?" H 10350 2500 50  0001 C CNN
+F 1 "GND" H 10355 2577 50  0000 C CNN
+F 2 "" H 10350 2750 50  0001 C CNN
+F 3 "" H 10350 2750 50  0001 C CNN
+	1    10350 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 10350 2750
+$Comp
+L Device:C C?
+U 1 1 5DABF022
+P 10350 2200
+F 0 "C?" H 10465 2246 50  0000 L CNN
+F 1 "C" H 10465 2155 50  0000 L CNN
+F 2 "" H 10388 2050 50  0001 C CNN
+F 3 "~" H 10350 2200 50  0001 C CNN
+	1    10350 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 2750 10350 2350
+Wire Wire Line
+	10350 2050 10350 1950
+Wire Wire Line
+	10350 1950 9450 1950
+Wire Wire Line
+	9450 1950 9450 2100
+Connection ~ 9450 2100
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DAC0813
+P 10350 1800
+F 0 "#PWR?" H 10350 1650 50  0001 C CNN
+F 1 "+3V3" H 10365 1973 50  0000 C CNN
+F 2 "" H 10350 1800 50  0001 C CNN
+F 3 "" H 10350 1800 50  0001 C CNN
+	1    10350 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 1950 10350 1800
+Connection ~ 10350 1950
+$EndSCHEMATC
