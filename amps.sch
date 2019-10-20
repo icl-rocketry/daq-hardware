@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:daq-hardware-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -146,10 +147,10 @@ Wire Wire Line
 Text HLabel 6850 3350 2    50   Input ~ 0
 EN
 $Comp
-L custom_lib:MCP6N11 U1
+L custom_lib:MCP6N11 U?
 U 1 1 5DAC9BC3
 P 5900 3500
-F 0 "U1" H 5950 3875 50  0000 C CNN
+F 0 "U?" H 5950 3875 50  0000 C CNN
 F 1 "MCP6N11" H 5950 3800 50  0000 C CNN
 F 2 "" H 5900 3750 50  0001 C CNN
 F 3 "" H 5900 3750 50  0001 C CNN
