@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name daq-hardware-rescue)(type Legacy)(uri ${KIPRJMOD}/daq-hardware-rescue.lib)(options "")(descr ""))
   (lib (name custom_lib)(type Legacy)(uri /Users/han/Desktop/custom_lib.lib)(options "")(descr ""))
+  (lib (name amps-rescue)(type Legacy)(uri ${KIPRJMOD}/amps-rescue.lib)(options "")(descr ""))
 )
