@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:daq-hardware-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -239,33 +239,33 @@ $EndComp
 $Comp
 L power:+3V3 #PWR0108
 U 1 1 5DA74F5A
-P 8400 1550
-F 0 "#PWR0108" H 8400 1400 50  0001 C CNN
-F 1 "+3V3" H 8400 1700 50  0000 C CNN
-F 2 "" H 8400 1550 50  0001 C CNN
-F 3 "" H 8400 1550 50  0001 C CNN
-	1    8400 1550
+P 8450 1550
+F 0 "#PWR0108" H 8450 1400 50  0001 C CNN
+F 1 "+3V3" H 8450 1700 50  0000 C CNN
+F 2 "" H 8450 1550 50  0001 C CNN
+F 3 "" H 8450 1550 50  0001 C CNN
+	1    8450 1550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 1550 8400 1650
+	8450 1550 8450 1650
 Wire Wire Line
-	8400 1650 9000 1650
+	8450 1650 9000 1650
 $Comp
 L power:GND #PWR0109
 U 1 1 5DA76764
-P 8400 1900
-F 0 "#PWR0109" H 8400 1650 50  0001 C CNN
-F 1 "GND" H 8400 1750 50  0000 C CNN
-F 2 "" H 8400 1900 50  0001 C CNN
-F 3 "" H 8400 1900 50  0001 C CNN
-	1    8400 1900
+P 8450 1900
+F 0 "#PWR0109" H 8450 1650 50  0001 C CNN
+F 1 "GND" H 8450 1750 50  0000 C CNN
+F 2 "" H 8450 1900 50  0001 C CNN
+F 3 "" H 8450 1900 50  0001 C CNN
+	1    8450 1900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 1900 8400 1850
+	8450 1900 8450 1850
 Wire Wire Line
-	8400 1850 9000 1850
+	8450 1850 9000 1850
 $Comp
 L Transistor_BJT:MMDT2222A Q1
 U 1 1 5DA77BBC
@@ -374,10 +374,8 @@ F1 "analogue.sch" 50
 F2 "SDA" I L 9400 4850 50 
 F3 "SCL" I L 9400 4950 50 
 $EndSheet
-NoConn ~ 9000 1350
 NoConn ~ 9000 2250
 NoConn ~ 9000 2150
-NoConn ~ 9000 2050
 Wire Wire Line
 	8650 1450 9000 1450
 Wire Wire Line
@@ -387,15 +385,13 @@ Wire Wire Line
 Wire Wire Line
 	8650 1950 9000 1950
 Text Label 8650 1450 0    50   ~ 0
-SD_CS
+SD_D3
 Text Label 8650 1550 0    50   ~ 0
-MOSI
+SD_CMD
 Text Label 8650 1750 0    50   ~ 0
-SCLK
+SD_CLK
 Text Label 8650 1950 0    50   ~ 0
-MISO
-Wire Wire Line
-	7200 2500 6900 2500
+SD_D0
 Wire Wire Line
 	7200 3200 6900 3200
 Wire Wire Line
@@ -404,8 +400,6 @@ Wire Wire Line
 	7200 3600 6900 3600
 Wire Wire Line
 	7200 4200 6900 4200
-Text Label 7200 2500 2    50   ~ 0
-SD_CS
 Text Label 7200 3200 2    50   ~ 0
 SCLK
 Text Label 7200 3300 2    50   ~ 0
@@ -415,7 +409,7 @@ MOSI
 Text Label 7200 4200 2    50   ~ 0
 BARO_CS
 $Comp
-L Device:R_Small R?
+L Device:R_Small R5
 U 1 1 5DBE20E6
 P 1400 5650
 F 0 "R5" H 1459 5696 50  0000 L CNN
@@ -483,7 +477,7 @@ F 3 "" H 2200 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R6
+L Device:R_Small R?
 U 1 1 5DBEB1F6
 P 2200 5700
 F 0 "R?" H 2259 5746 50  0000 L CNN
@@ -651,4 +645,51 @@ U 5DAD2AA3
 F0 "thermocouples" 50
 F1 "thermocouples.sch" 50
 $EndSheet
+Wire Wire Line
+	6900 2200 7200 2200
+Wire Wire Line
+	6900 2400 7200 2400
+Text Label 7200 2200 2    50   ~ 0
+SD_D0
+Text Label 7200 2400 2    50   ~ 0
+SD_D1
+Wire Wire Line
+	6900 2600 7200 2600
+Wire Wire Line
+	6900 2700 7200 2700
+Wire Wire Line
+	6900 2800 7200 2800
+Wire Wire Line
+	6900 2900 7200 2900
+Text Label 7200 2600 2    50   ~ 0
+SD_D2
+Text Label 7200 2700 2    50   ~ 0
+SD_D3
+Text Label 7200 2900 2    50   ~ 0
+SD_CMD
+Text Label 7200 2800 2    50   ~ 0
+SD_CLK
+Wire Wire Line
+	9000 2050 8650 2050
+Wire Wire Line
+	8650 1350 9000 1350
+Text Label 8650 1350 0    50   ~ 0
+SD_D2
+Text Label 8650 2050 0    50   ~ 0
+SD_D1
+$Comp
+L power:GND #PWR?
+U 1 1 5DB5B376
+P 10750 2300
+F 0 "#PWR?" H 10750 2050 50  0001 C CNN
+F 1 "GND" H 10750 2150 50  0000 C CNN
+F 2 "" H 10750 2300 50  0001 C CNN
+F 3 "" H 10750 2300 50  0001 C CNN
+	1    10750 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 2250 10750 2250
+Wire Wire Line
+	10750 2250 10750 2300
 $EndSCHEMATC
