@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:daq-hardware-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Sensor_Temperature:MAX31855RASA U4
+L Sensor_Temperature:MAX31855RASA U?
 U 1 1 5DA6096E
 P 2950 2400
-F 0 "U4" H 2950 2981 50  0000 C CNN
+F 0 "U?" H 2950 2981 50  0000 C CNN
 F 1 "MAX31855RASA" H 2950 2890 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3950 2050 50  0001 C CIN
 F 3 "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 2950 2400 50  0001 C CNN
@@ -26,10 +26,10 @@ F 3 "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 2950 2400 50  0
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C4
+L Device:C C?
 U 1 1 5DA633EE
 P 2000 2400
-F 0 "C4" H 2115 2446 50  0000 L CNN
+F 0 "C?" H 2115 2446 50  0000 L CNN
 F 1 "100nF" H 2115 2355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2038 2250 50  0001 C CNN
 F 3 "~" H 2000 2400 50  0001 C CNN
@@ -45,10 +45,10 @@ Wire Wire Line
 Wire Wire Line
 	2000 2000 2000 2250
 $Comp
-L power:+3V3 #PWR0117
+L power:+3V3 #PWR?
 U 1 1 5DA64666
 P 2000 1900
-F 0 "#PWR0117" H 2000 1750 50  0001 C CNN
+F 0 "#PWR?" H 2000 1750 50  0001 C CNN
 F 1 "+3V3" H 2015 2073 50  0000 C CNN
 F 2 "" H 2000 1900 50  0001 C CNN
 F 3 "" H 2000 1900 50  0001 C CNN
@@ -59,10 +59,10 @@ Wire Wire Line
 	2000 1900 2000 2000
 Connection ~ 2000 2000
 $Comp
-L power:GND #PWR0118
+L power:GND #PWR?
 U 1 1 5DA65041
 P 2000 2900
-F 0 "#PWR0118" H 2000 2650 50  0001 C CNN
+F 0 "#PWR?" H 2000 2650 50  0001 C CNN
 F 1 "GND" H 2005 2727 50  0000 C CNN
 F 2 "" H 2000 2900 50  0001 C CNN
 F 3 "" H 2000 2900 50  0001 C CNN
@@ -73,10 +73,10 @@ Wire Wire Line
 	2000 2900 2000 2800
 Connection ~ 2000 2800
 $Comp
-L Device:C C5
+L Device:C C?
 U 1 1 5DA6662C
 P 2400 2400
-F 0 "C5" H 2515 2446 50  0000 L CNN
+F 0 "C?" H 2515 2446 50  0000 L CNN
 F 1 "10nF" H 2515 2355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2438 2250 50  0001 C CNN
 F 3 "~" H 2400 2400 50  0001 C CNN
@@ -92,10 +92,10 @@ Wire Wire Line
 Wire Wire Line
 	2550 2550 2400 2550
 $Comp
-L Sensor_Temperature:MAX31855RASA U6
+L Sensor_Temperature:MAX31855RASA U?
 U 1 1 5DAB048A
 P 6950 2400
-F 0 "U6" H 6950 2981 50  0000 C CNN
+F 0 "U?" H 6950 2981 50  0000 C CNN
 F 1 "MAX31855RASA" H 6950 2890 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7950 2050 50  0001 C CIN
 F 3 "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 6950 2400 50  0001 C CNN
@@ -103,10 +103,10 @@ F 3 "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 6950 2400 50  0
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C8
+L Device:C C?
 U 1 1 5DAB0490
 P 6000 2400
-F 0 "C8" H 6115 2446 50  0000 L CNN
+F 0 "C?" H 6115 2446 50  0000 L CNN
 F 1 "100nF" H 6115 2355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6038 2250 50  0001 C CNN
 F 3 "~" H 6000 2400 50  0001 C CNN
@@ -122,10 +122,10 @@ Wire Wire Line
 Wire Wire Line
 	6000 2000 6000 2250
 $Comp
-L power:+3V3 #PWR0119
+L power:+3V3 #PWR?
 U 1 1 5DAB049A
 P 6000 1900
-F 0 "#PWR0119" H 6000 1750 50  0001 C CNN
+F 0 "#PWR?" H 6000 1750 50  0001 C CNN
 F 1 "+3V3" H 6015 2073 50  0000 C CNN
 F 2 "" H 6000 1900 50  0001 C CNN
 F 3 "" H 6000 1900 50  0001 C CNN
@@ -136,10 +136,10 @@ Wire Wire Line
 	6000 1900 6000 2000
 Connection ~ 6000 2000
 $Comp
-L power:GND #PWR0120
+L power:GND #PWR?
 U 1 1 5DAB04A2
 P 6000 2900
-F 0 "#PWR0120" H 6000 2650 50  0001 C CNN
+F 0 "#PWR?" H 6000 2650 50  0001 C CNN
 F 1 "GND" H 6005 2727 50  0000 C CNN
 F 2 "" H 6000 2900 50  0001 C CNN
 F 3 "" H 6000 2900 50  0001 C CNN
@@ -150,10 +150,10 @@ Wire Wire Line
 	6000 2900 6000 2800
 Connection ~ 6000 2800
 $Comp
-L Device:C C9
+L Device:C C?
 U 1 1 5DAB04AA
 P 6400 2400
-F 0 "C9" H 6515 2446 50  0000 L CNN
+F 0 "C?" H 6515 2446 50  0000 L CNN
 F 1 "10nF" H 6515 2355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6438 2250 50  0001 C CNN
 F 3 "~" H 6400 2400 50  0001 C CNN
@@ -169,10 +169,10 @@ Wire Wire Line
 Wire Wire Line
 	6550 2550 6400 2550
 $Comp
-L Device:C C6
+L Device:C C?
 U 1 1 5DAB1C47
 P 4000 2400
-F 0 "C6" H 4115 2446 50  0000 L CNN
+F 0 "C?" H 4115 2446 50  0000 L CNN
 F 1 "100nF" H 4115 2355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4038 2250 50  0001 C CNN
 F 3 "~" H 4000 2400 50  0001 C CNN
@@ -186,10 +186,10 @@ Wire Wire Line
 Wire Wire Line
 	4000 2000 4000 2250
 $Comp
-L power:+3V3 #PWR0121
+L power:+3V3 #PWR?
 U 1 1 5DAB1C51
 P 4000 1900
-F 0 "#PWR0121" H 4000 1750 50  0001 C CNN
+F 0 "#PWR?" H 4000 1750 50  0001 C CNN
 F 1 "+3V3" H 4015 2073 50  0000 C CNN
 F 2 "" H 4000 1900 50  0001 C CNN
 F 3 "" H 4000 1900 50  0001 C CNN
@@ -200,10 +200,10 @@ Wire Wire Line
 	4000 1900 4000 2000
 Connection ~ 4000 2000
 $Comp
-L power:GND #PWR0122
+L power:GND #PWR?
 U 1 1 5DAB1C59
 P 4000 2900
-F 0 "#PWR0122" H 4000 2650 50  0001 C CNN
+F 0 "#PWR?" H 4000 2650 50  0001 C CNN
 F 1 "GND" H 4005 2727 50  0000 C CNN
 F 2 "" H 4000 2900 50  0001 C CNN
 F 3 "" H 4000 2900 50  0001 C CNN
@@ -214,10 +214,10 @@ Wire Wire Line
 	4000 2900 4000 2800
 Connection ~ 4000 2800
 $Comp
-L Device:C C7
+L Device:C C?
 U 1 1 5DAB1C61
 P 4400 2400
-F 0 "C7" H 4515 2446 50  0000 L CNN
+F 0 "C?" H 4515 2446 50  0000 L CNN
 F 1 "10nF" H 4515 2355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4438 2250 50  0001 C CNN
 F 3 "~" H 4400 2400 50  0001 C CNN
@@ -233,10 +233,10 @@ Wire Wire Line
 Wire Wire Line
 	4550 2550 4400 2550
 $Comp
-L Sensor_Temperature:MAX31855RASA U7
+L Sensor_Temperature:MAX31855RASA U?
 U 1 1 5DAC2196
 P 8950 2400
-F 0 "U7" H 8950 2981 50  0000 C CNN
+F 0 "U?" H 8950 2981 50  0000 C CNN
 F 1 "MAX31855RASA" H 8950 2890 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9950 2050 50  0001 C CIN
 F 3 "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 8950 2400 50  0001 C CNN
@@ -244,10 +244,10 @@ F 3 "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 8950 2400 50  0
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C10
+L Device:C C?
 U 1 1 5DAC219C
 P 8000 2400
-F 0 "C10" H 8115 2446 50  0000 L CNN
+F 0 "C?" H 8115 2446 50  0000 L CNN
 F 1 "100nF" H 8115 2355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8038 2250 50  0001 C CNN
 F 3 "~" H 8000 2400 50  0001 C CNN
@@ -263,10 +263,10 @@ Wire Wire Line
 Wire Wire Line
 	8000 2000 8000 2250
 $Comp
-L power:+3V3 #PWR0123
+L power:+3V3 #PWR?
 U 1 1 5DAC21A6
 P 8000 1900
-F 0 "#PWR0123" H 8000 1750 50  0001 C CNN
+F 0 "#PWR?" H 8000 1750 50  0001 C CNN
 F 1 "+3V3" H 8015 2073 50  0000 C CNN
 F 2 "" H 8000 1900 50  0001 C CNN
 F 3 "" H 8000 1900 50  0001 C CNN
@@ -277,10 +277,10 @@ Wire Wire Line
 	8000 1900 8000 2000
 Connection ~ 8000 2000
 $Comp
-L power:GND #PWR0124
+L power:GND #PWR?
 U 1 1 5DAC21AE
 P 8000 2900
-F 0 "#PWR0124" H 8000 2650 50  0001 C CNN
+F 0 "#PWR?" H 8000 2650 50  0001 C CNN
 F 1 "GND" H 8005 2727 50  0000 C CNN
 F 2 "" H 8000 2900 50  0001 C CNN
 F 3 "" H 8000 2900 50  0001 C CNN
@@ -291,10 +291,10 @@ Wire Wire Line
 	8000 2900 8000 2800
 Connection ~ 8000 2800
 $Comp
-L Device:C C11
+L Device:C C?
 U 1 1 5DAC21B6
 P 8400 2400
-F 0 "C11" H 8515 2446 50  0000 L CNN
+F 0 "C?" H 8515 2446 50  0000 L CNN
 F 1 "10nF" H 8515 2355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8438 2250 50  0001 C CNN
 F 3 "~" H 8400 2400 50  0001 C CNN
@@ -309,29 +309,17 @@ Wire Wire Line
 	8550 2500 8550 2550
 Wire Wire Line
 	8550 2550 8400 2550
-Text HLabel 3350 2300 2    50   Output ~ 0
-MISO
-Text HLabel 3350 2200 2    50   Output ~ 0
-SCLK
 Text HLabel 3350 2500 2    50   Input ~ 0
 ~CS_1
-Text HLabel 7350 2200 2    50   Output ~ 0
-SCLK
-Text HLabel 7350 2300 2    50   Output ~ 0
-MISO
 Text HLabel 7350 2500 2    50   Input ~ 0
 ~CS_2
-Text HLabel 5350 2200 2    50   Output ~ 0
-SCLK
-Text HLabel 5350 2300 2    50   Output ~ 0
-MISO
 Text HLabel 5350 2500 2    50   Input ~ 0
 ~CS_3
-Text HLabel 9350 2200 2    50   Output ~ 0
+Text HLabel 9350 2200 2    50   Input ~ 0
 SCLK
-Text HLabel 9350 2300 2    50   Output ~ 0
+Text HLabel 9350 2300 2    50   Input ~ 0
 MISO
-Text HLabel 9350 2500 2    50   Output ~ 0
+Text HLabel 9350 2500 2    50   Input ~ 0
 ~CS_4
 Wire Wire Line
 	2400 2250 2400 2100
@@ -344,10 +332,10 @@ Connection ~ 2400 2550
 Text Label 2000 1500 0    50   ~ 0
 T1_T-
 $Comp
-L Connector:Screw_Terminal_01x02 J3
+L Connector:Screw_Terminal_01x02 J?
 U 1 1 5DAD8258
 P 2550 1500
-F 0 "J3" H 2630 1492 50  0000 L CNN
+F 0 "J?" H 2630 1492 50  0000 L CNN
 F 1 "Screw_Terminal_Thermo_1" H 2630 1401 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 2550 1500 50  0001 C CNN
 F 3 "~" H 2550 1500 50  0001 C CNN
@@ -364,10 +352,10 @@ Connection ~ 4400 2550
 Text Label 4400 2700 0    50   ~ 0
 T2_T-
 $Comp
-L Connector:Screw_Terminal_01x02 J4
+L Connector:Screw_Terminal_01x02 J?
 U 1 1 5DAE1281
 P 4550 1500
-F 0 "J4" H 4630 1492 50  0000 L CNN
+F 0 "J?" H 4630 1492 50  0000 L CNN
 F 1 "Screw_Terminal_Thermo_2" H 4630 1401 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 4550 1500 50  0001 C CNN
 F 3 "~" H 4550 1500 50  0001 C CNN
@@ -382,10 +370,10 @@ T2_T+
 Wire Wire Line
 	4400 2100 4400 2250
 $Comp
-L Sensor_Temperature:MAX31855RASA U5
+L Sensor_Temperature:MAX31855RASA U?
 U 1 1 5DAB1C41
 P 4950 2400
-F 0 "U5" H 4950 2981 50  0000 C CNN
+F 0 "U?" H 4950 2981 50  0000 C CNN
 F 1 "MAX31855RASA" H 4950 2890 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5950 2050 50  0001 C CIN
 F 3 "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 4950 2400 50  0001 C CNN
@@ -415,10 +403,10 @@ T3_T+
 Text Label 6000 1500 0    50   ~ 0
 T3_T-
 $Comp
-L Connector:Screw_Terminal_01x02 J5
+L Connector:Screw_Terminal_01x02 J?
 U 1 1 5DAE7830
 P 6550 1500
-F 0 "J5" H 6630 1492 50  0000 L CNN
+F 0 "J?" H 6630 1492 50  0000 L CNN
 F 1 "Screw_Terminal_Thermo_3" H 6630 1401 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 6550 1500 50  0001 C CNN
 F 3 "~" H 6550 1500 50  0001 C CNN
@@ -444,10 +432,10 @@ T4_T+
 Text Label 8000 1500 0    50   ~ 0
 T4_T-
 $Comp
-L Connector:Screw_Terminal_01x02 J6
+L Connector:Screw_Terminal_01x02 J?
 U 1 1 5DAEBA70
 P 8550 1500
-F 0 "J6" H 8630 1492 50  0000 L CNN
+F 0 "J?" H 8630 1492 50  0000 L CNN
 F 1 "Screw_Terminal_Thermo_4" H 8630 1401 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 8550 1500 50  0001 C CNN
 F 3 "~" H 8550 1500 50  0001 C CNN
@@ -462,4 +450,16 @@ Wire Wire Line
 	2000 1500 2350 1500
 Wire Wire Line
 	2000 1600 2350 1600
+Text HLabel 7350 2200 2    50   Input ~ 0
+SCLK
+Text HLabel 7350 2300 2    50   Input ~ 0
+MISO
+Text HLabel 5350 2200 2    50   Input ~ 0
+SCLK
+Text HLabel 5350 2300 2    50   Input ~ 0
+MISO
+Text HLabel 3350 2200 2    50   Input ~ 0
+SCLK
+Text HLabel 3350 2300 2    50   Input ~ 0
+MISO
 $EndSCHEMATC
