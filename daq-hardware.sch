@@ -357,7 +357,7 @@ Wire Wire Line
 Text Label 2900 4900 2    50   ~ 0
 RESET
 Text Label 2900 3750 2    50   ~ 0
-GPIO0
+BOOT
 Wire Wire Line
 	5700 2000 5300 2000
 Text Label 5300 2000 0    50   ~ 0
@@ -365,7 +365,7 @@ RESET
 Wire Wire Line
 	6900 2000 7200 2000
 Text Label 7200 2000 2    50   ~ 0
-GPIO0
+BOOT
 $Sheet
 S 9450 4750 1050 350 
 U 5DA926B9
@@ -402,16 +402,12 @@ Wire Wire Line
 	7200 3300 6900 3300
 Wire Wire Line
 	7200 3600 6900 3600
-Wire Wire Line
-	7200 4200 6900 4200
 Text Label 7200 3200 2    50   ~ 0
 SCLK
 Text Label 7200 3300 2    50   ~ 0
 MISO
 Text Label 7200 3600 2    50   ~ 0
 MOSI
-Text Label 7200 4200 2    50   ~ 0
-BARO_CS
 $Comp
 L Device:R_Small R5
 U 1 1 5DBE20E6
@@ -696,4 +692,72 @@ Wire Wire Line
 	10700 2250 10750 2250
 Wire Wire Line
 	10750 2250 10750 2300
+Wire Wire Line
+	6900 3400 7200 3400
+Wire Wire Line
+	6900 3500 7200 3500
+Text Label 7200 3400 2    50   ~ 0
+SDA
+Text Label 7200 3500 2    50   ~ 0
+SCL
+Wire Wire Line
+	9500 3600 9800 3600
+Wire Wire Line
+	9950 3600 10250 3600
+Text Label 9800 3600 2    50   ~ 0
+SDA
+Text Label 10250 3600 2    50   ~ 0
+SCL
+$Comp
+L Device:R R?
+U 1 1 5DB5090D
+P 9500 3300
+F 0 "R?" H 9570 3346 50  0000 L CNN
+F 1 "4k7" H 9570 3255 50  0000 L CNN
+F 2 "" V 9430 3300 50  0001 C CNN
+F 3 "~" H 9500 3300 50  0001 C CNN
+	1    9500 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 3600 9500 3450
+$Comp
+L Device:R R?
+U 1 1 5DB50914
+P 9950 3300
+F 0 "R?" H 9880 3254 50  0000 R CNN
+F 1 "4k7" H 9880 3345 50  0000 R CNN
+F 2 "" V 9880 3300 50  0001 C CNN
+F 3 "~" H 9950 3300 50  0001 C CNN
+	1    9950 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9950 3450 9950 3600
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DB5091B
+P 9500 3000
+F 0 "#PWR?" H 9500 2850 50  0001 C CNN
+F 1 "+3V3" H 9515 3173 50  0000 C CNN
+F 2 "" H 9500 3000 50  0001 C CNN
+F 3 "" H 9500 3000 50  0001 C CNN
+	1    9500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DB50921
+P 9950 3000
+F 0 "#PWR?" H 9950 2850 50  0001 C CNN
+F 1 "+3V3" H 9965 3173 50  0000 C CNN
+F 2 "" H 9950 3000 50  0001 C CNN
+F 3 "" H 9950 3000 50  0001 C CNN
+	1    9950 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 3000 9950 3150
+Wire Wire Line
+	9500 3000 9500 3150
 $EndSCHEMATC
