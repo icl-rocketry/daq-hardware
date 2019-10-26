@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -1075,4 +1075,11 @@ Wire Wire Line
 	6550 3200 6850 3200
 Text Label 6850 3200 2    50   ~ 0
 LED
+$Sheet
+S 7350 5250 650  350 
+U 5DB4FA2A
+F0 "pyro" 50
+F1 "pyro.sch" 50
+F2 "Fire" I L 7350 5350 50 
+$EndSheet
 $EndSCHEMATC
