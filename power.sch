@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:daq-hardware-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -25,19 +24,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/tps62160.pdf" H 3500 2050 50  0001 C CNN
 	1    3500 1500
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:VDD #PWR?
-U 1 1 5DAB5D87
-P 2800 1200
-F 0 "#PWR?" H 2800 1050 50  0001 C CNN
-F 1 "VDD" H 2817 1373 50  0000 C CNN
-F 2 "" H 2800 1200 50  0001 C CNN
-F 3 "" H 2800 1200 50  0001 C CNN
-	1    2800 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 1200 3050 1200
 Wire Wire Line
 	3050 1200 3050 1300
 Wire Wire Line
@@ -96,10 +82,7 @@ F 3 "~" H 2450 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2800 1200 2450 1200
-Wire Wire Line
 	2450 1200 2450 1350
-Connection ~ 2800 1200
 $Comp
 L power:GND #PWR?
 U 1 1 5DABE1CD
@@ -264,19 +247,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/tps62160.pdf" H 3500 3600 50  0001 C CNN
 	1    3500 3050
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:VDD #PWR?
-U 1 1 5DB05F62
-P 2800 2750
-F 0 "#PWR?" H 2800 2600 50  0001 C CNN
-F 1 "VDD" H 2817 2923 50  0000 C CNN
-F 2 "" H 2800 2750 50  0001 C CNN
-F 3 "" H 2800 2750 50  0001 C CNN
-	1    2800 2750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 2750 3050 2750
 Wire Wire Line
 	3050 2750 3050 2850
 Wire Wire Line
@@ -296,10 +266,7 @@ F 3 "~" H 2450 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2800 2750 2450 2750
-Wire Wire Line
 	2450 2750 2450 2900
-Connection ~ 2800 2750
 $Comp
 L power:GND #PWR?
 U 1 1 5DB05F8B
@@ -793,17 +760,6 @@ Wire Wire Line
 	4400 3350 5200 3350
 $Comp
 L power:VDD #PWR?
-U 1 1 5DBC3A47
-P 2450 4250
-F 0 "#PWR?" H 2450 4100 50  0001 C CNN
-F 1 "VDD" H 2467 4423 50  0000 C CNN
-F 2 "" H 2450 4250 50  0001 C CNN
-F 3 "" H 2450 4250 50  0001 C CNN
-	1    2450 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VDD #PWR?
 U 1 1 5DBC98EF
 P 2250 5250
 F 0 "#PWR?" H 2250 5100 50  0001 C CNN
@@ -813,4 +769,43 @@ F 3 "" H 2250 5250 50  0001 C CNN
 	1    2250 5250
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2450 2750 3050 2750
+Wire Wire Line
+	2450 1200 3050 1200
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DB9D618
+P 2450 2750
+F 0 "#PWR?" H 2450 2600 50  0001 C CNN
+F 1 "+3V3" H 2465 2923 50  0000 C CNN
+F 2 "" H 2450 2750 50  0001 C CNN
+F 3 "" H 2450 2750 50  0001 C CNN
+	1    2450 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 2450 2750
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DBA6E0E
+P 2450 4250
+F 0 "#PWR?" H 2450 4100 50  0001 C CNN
+F 1 "+3V3" H 2465 4423 50  0000 C CNN
+F 2 "" H 2450 4250 50  0001 C CNN
+F 3 "" H 2450 4250 50  0001 C CNN
+	1    2450 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5DBA9D40
+P 2450 1200
+F 0 "#PWR?" H 2450 1050 50  0001 C CNN
+F 1 "VDD" H 2467 1373 50  0000 C CNN
+F 2 "" H 2450 1200 50  0001 C CNN
+F 3 "" H 2450 1200 50  0001 C CNN
+	1    2450 1200
+	1    0    0    -1  
+$EndComp
+Connection ~ 2450 1200
 $EndSCHEMATC
