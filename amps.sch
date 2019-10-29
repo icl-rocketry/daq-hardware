@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:daq-hardware-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -54,7 +54,7 @@ L Device:R R?
 U 1 1 5DABEACC
 P 6550 3900
 F 0 "R?" H 6620 3946 50  0000 L CNN
-F 1 "R" H 6620 3855 50  0000 L CNN
+F 1 "165k" H 6620 3855 50  0000 L CNN
 F 2 "" V 6480 3900 50  0001 C CNN
 F 3 "~" H 6550 3900 50  0001 C CNN
 	1    6550 3900
@@ -69,7 +69,7 @@ L Device:R R?
 U 1 1 5DABF163
 P 6550 4400
 F 0 "R?" H 6620 4446 50  0000 L CNN
-F 1 "R" H 6620 4355 50  0000 L CNN
+F 1 "1k" H 6620 4355 50  0000 L CNN
 F 2 "" V 6480 4400 50  0001 C CNN
 F 3 "~" H 6550 4400 50  0001 C CNN
 	1    6550 4400
@@ -160,20 +160,45 @@ $EndComp
 Wire Wire Line
 	6350 3350 6850 3350
 Wire Wire Line
-	6350 3450 6850 3450
-Wire Wire Line
 	6350 3550 6550 3550
-Wire Wire Line
-	5150 3450 5400 3450
 Wire Wire Line
 	4700 3600 5000 3600
 Wire Wire Line
 	5000 3600 5000 3550
-Wire Wire Line
-	5000 3550 5400 3550
 Connection ~ 4700 3600
 Wire Wire Line
 	5400 3350 5400 3200
 Wire Wire Line
 	5400 3200 5250 3200
+Wire Wire Line
+	5450 3350 5400 3350
+Wire Wire Line
+	5150 3450 5450 3450
+Wire Wire Line
+	5000 3550 5450 3550
+Wire Wire Line
+	5450 3650 5400 3650
+Text HLabel 6850 3650 2    50   Input ~ 0
+VOUT
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DAF5D9F
+P 7150 3350
+F 0 "#PWR?" H 7150 3200 50  0001 C CNN
+F 1 "+3V3" H 7165 3523 50  0000 C CNN
+F 2 "" H 7150 3350 50  0001 C CNN
+F 3 "" H 7150 3350 50  0001 C CNN
+	1    7150 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 3450 7150 3350
+Wire Wire Line
+	6350 3450 7150 3450
+Text Label 6850 4150 2    50   ~ 0
+V_FG
+Text Label 5250 3200 0    50   ~ 0
+V_FG
+Text HLabel 4100 3650 3    50   Input ~ 0
+VLOADCELL
 $EndSCHEMATC

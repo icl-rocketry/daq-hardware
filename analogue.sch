@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:daq-hardware-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -18,37 +18,6 @@ Text HLabel 5750 3250 2    50   Input ~ 0
 SDA
 Text HLabel 5200 3150 2    50   Input ~ 0
 SCL
-Wire Wire Line
-	4800 3150 5000 3150
-$Comp
-L Device:R R?
-U 1 1 5DAA648E
-P 5000 2850
-F 0 "R?" H 5070 2896 50  0000 L CNN
-F 1 "1k" H 5070 2805 50  0000 L CNN
-F 2 "" V 4930 2850 50  0001 C CNN
-F 3 "~" H 5000 2850 50  0001 C CNN
-	1    5000 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 3150 5000 3000
-Connection ~ 5000 3150
-Wire Wire Line
-	5000 3150 5200 3150
-$Comp
-L Device:R R?
-U 1 1 5DAA76C4
-P 5600 2850
-F 0 "R?" H 5530 2804 50  0000 R CNN
-F 1 "1k" H 5530 2895 50  0000 R CNN
-F 2 "" V 5530 2850 50  0001 C CNN
-F 3 "~" H 5600 2850 50  0001 C CNN
-	1    5600 2850
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5600 3000 5600 3250
 $Comp
 L Device:C C?
 U 1 1 5DAAAEFF
@@ -119,32 +88,6 @@ F 3 "" H 3400 3150 50  0001 C CNN
 $EndComp
 $Comp
 L power:+3V3 #PWR?
-U 1 1 5DAB4546
-P 5000 2550
-F 0 "#PWR?" H 5000 2400 50  0001 C CNN
-F 1 "+3V3" H 5015 2723 50  0000 C CNN
-F 2 "" H 5000 2550 50  0001 C CNN
-F 3 "" H 5000 2550 50  0001 C CNN
-	1    5000 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5DAB4CCE
-P 5600 2550
-F 0 "#PWR?" H 5600 2400 50  0001 C CNN
-F 1 "+3V3" H 5615 2723 50  0000 C CNN
-F 2 "" H 5600 2550 50  0001 C CNN
-F 3 "" H 5600 2550 50  0001 C CNN
-	1    5600 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5600 2550 5600 2700
-Wire Wire Line
-	5000 2550 5000 2700
-$Comp
-L power:+3V3 #PWR?
 U 1 1 5DAB5B66
 P 6050 3450
 F 0 "#PWR?" H 6050 3300 50  0001 C CNN
@@ -182,11 +125,6 @@ F 3 "" H 5400 4150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5400 4050 5400 4150
-Wire Wire Line
-	4800 3250 5600 3250
-Wire Wire Line
-	5600 3250 5750 3250
-Connection ~ 5600 3250
 Wire Wire Line
 	4800 3450 5900 3450
 Wire Wire Line
@@ -305,4 +243,8 @@ Wire Wire Line
 	4900 4050 4900 4100
 Wire Wire Line
 	5100 3650 5100 4050
+Wire Wire Line
+	4800 3150 5200 3150
+Wire Wire Line
+	4800 3250 5750 3250
 $EndSCHEMATC
