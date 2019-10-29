@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:daq-hardware-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -393,7 +394,7 @@ $EndComp
 Wire Wire Line
 	1250 1950 1400 1950
 $Comp
-L iclr:TPS61093 U?
+L daq-hardware-rescue:TPS61093-iclr U?
 U 1 1 5DB43DEA
 P 3300 4650
 F 0 "U?" H 3275 4875 50  0000 C CNN
