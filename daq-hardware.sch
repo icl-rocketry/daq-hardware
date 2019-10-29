@@ -366,18 +366,6 @@ Wire Wire Line
 	6550 2700 6850 2700
 Text Label 6850 2700 2    50   ~ 0
 BOOT
-$Sheet
-S 9900 4050 550  1000
-U 5DA926B9
-F0 "analogue" 50
-F1 "analogue.sch" 50
-F2 "SDA" I L 9900 4150 50 
-F3 "SCL" I L 9900 4250 50 
-F4 "AIN0" I L 9900 4350 50 
-F5 "AIN1" I L 9900 4450 50 
-F6 "AIN3" I L 9900 4650 50 
-F7 "AIN2" I L 9900 4550 50 
-$EndSheet
 NoConn ~ 9350 2100
 NoConn ~ 9350 2000
 Wire Wire Line
@@ -951,14 +939,6 @@ NoConn ~ 5350 4100
 NoConn ~ 5350 4200
 NoConn ~ 5350 4300
 NoConn ~ 5350 4400
-Wire Wire Line
-	9900 4150 9550 4150
-Text Label 9550 4150 0    50   ~ 0
-SDA
-Wire Wire Line
-	9900 4250 9550 4250
-Text Label 9550 4250 0    50   ~ 0
-SCL
 Text Notes 2200 800  0    50   ~ 0
 USB to UART
 $Comp
@@ -1081,5 +1061,17 @@ U 5DB4FA2A
 F0 "pyro" 50
 F1 "pyro.sch" 50
 F2 "Fire" I L 7350 5350 50 
+$EndSheet
+$Sheet
+S 9900 4050 550  1000
+U 5DA926B9
+F0 "analogue" 50
+F1 "analogue.sch" 50
+F2 "MOSI" I L 9900 4150 50 
+F3 "MISO" O L 9900 4250 50 
+F4 "SCLK" I L 9900 4350 50 
+F5 "~CS" I L 9900 4450 50 
+F6 "~DRDY" O L 9900 4550 50 
+F7 "CLKIN" I L 9900 4650 50 
 $EndSheet
 $EndSCHEMATC
