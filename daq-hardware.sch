@@ -603,7 +603,7 @@ Wire Wire Line
 Text Label 2700 6550 2    50   ~ 0
 RESET
 Text Label 2700 7200 2    50   ~ 0
-GPIO0
+BOOT
 $Sheet
 S 9900 5250 550  400 
 U 5DAD2180
