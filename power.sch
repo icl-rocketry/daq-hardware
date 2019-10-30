@@ -15,14 +15,34 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Regulator_Switching:TPS62160DGK U?
+L Regulator_Switching:TPS62160DGK U4
 U 1 1 5DAB361D
+<<<<<<< Updated upstream
 P 3500 1500
 F 0 "U?" H 3500 2067 50  0000 C CNN
 F 1 "TPS62160DGK" H 3500 1976 50  0000 C CNN
 F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 3650 1150 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tps62160.pdf" H 3500 2050 50  0001 C CNN
 	1    3500 1500
+=======
+P 6250 2600
+F 0 "U4" H 6250 3167 50  0000 C CNN
+F 1 "TPS62160DGK" H 6250 3076 50  0000 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 6400 2250 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps62160.pdf" H 6250 3150 50  0001 C CNN
+	1    6250 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0132
+U 1 1 5DAB5D87
+P 5550 2300
+F 0 "#PWR0132" H 5550 2150 50  0001 C CNN
+F 1 "VDD" H 5567 2473 50  0000 C CNN
+F 2 "" H 5550 2300 50  0001 C CNN
+F 3 "" H 5550 2300 50  0001 C CNN
+	1    5550 2300
+>>>>>>> Stashed changes
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -33,25 +53,43 @@ Connection ~ 3050 1200
 Wire Wire Line
 	3050 1200 3100 1200
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J3
 U 1 1 5DAB6ED0
+<<<<<<< Updated upstream
 P 1050 1250
 F 0 "J?" H 968 1467 50  0000 C CNN
 F 1 "Conn_01x02" H 968 1376 50  0000 C CNN
 F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 1050 1250 50  0001 C CNN
 F 3 "~" H 1050 1250 50  0001 C CNN
 	1    1050 1250
+=======
+P 3750 2350
+F 0 "J3" H 3668 2567 50  0000 C CNN
+F 1 "Conn_01x02" H 3668 2476 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 3750 2350 50  0001 C CNN
+F 3 "~" H 3750 2350 50  0001 C CNN
+	1    3750 2350
+>>>>>>> Stashed changes
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x02 J?
+L Connector:Screw_Terminal_01x02 J4
 U 1 1 5DAB7829
+<<<<<<< Updated upstream
 P 1050 1850
 F 0 "J?" H 968 2067 50  0000 C CNN
 F 1 "Screw_Terminal_01x02" H 968 1976 50  0000 C CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 1050 1850 50  0001 C CNN
 F 3 "~" H 1050 1850 50  0001 C CNN
 	1    1050 1850
+=======
+P 3750 2950
+F 0 "J4" H 3668 3167 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 3668 3076 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 3750 2950 50  0001 C CNN
+F 3 "~" H 3750 2950 50  0001 C CNN
+	1    3750 2950
+>>>>>>> Stashed changes
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -59,51 +97,87 @@ Wire Wire Line
 Wire Wire Line
 	1400 1350 1250 1350
 $Comp
-L power:VDD #PWR?
+L power:VDD #PWR0133
 U 1 1 5DAB8713
+<<<<<<< Updated upstream
 P 1400 1250
 F 0 "#PWR?" H 1400 1100 50  0001 C CNN
 F 1 "VDD" H 1417 1423 50  0000 C CNN
 F 2 "" H 1400 1250 50  0001 C CNN
 F 3 "" H 1400 1250 50  0001 C CNN
 	1    1400 1250
+=======
+P 4100 2350
+F 0 "#PWR0133" H 4100 2200 50  0001 C CNN
+F 1 "VDD" H 4117 2523 50  0000 C CNN
+F 2 "" H 4100 2350 50  0001 C CNN
+F 3 "" H 4100 2350 50  0001 C CNN
+	1    4100 2350
+>>>>>>> Stashed changes
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1250 1250 1400 1250
 $Comp
-L Device:C C?
+L Device:C C6
 U 1 1 5DAB94FA
+<<<<<<< Updated upstream
 P 2450 1500
 F 0 "C?" H 2565 1546 50  0000 L CNN
 F 1 "10u" H 2565 1455 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 2488 1350 50  0001 C CNN
 F 3 "~" H 2450 1500 50  0001 C CNN
 	1    2450 1500
+=======
+P 5200 2600
+F 0 "C6" H 5315 2646 50  0000 L CNN
+F 1 "10u" H 5315 2555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 5238 2450 50  0001 C CNN
+F 3 "~" H 5200 2600 50  0001 C CNN
+	1    5200 2600
+>>>>>>> Stashed changes
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2450 1200 2450 1350
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0134
 U 1 1 5DABE1CD
+<<<<<<< Updated upstream
 P 3000 2100
 F 0 "#PWR?" H 3000 1850 50  0001 C CNN
 F 1 "GND" H 3005 1927 50  0000 C CNN
 F 2 "" H 3000 2100 50  0001 C CNN
 F 3 "" H 3000 2100 50  0001 C CNN
 	1    3000 2100
+=======
+P 5750 3200
+F 0 "#PWR0134" H 5750 2950 50  0001 C CNN
+F 1 "GND" H 5755 3027 50  0000 C CNN
+F 2 "" H 5750 3200 50  0001 C CNN
+F 3 "" H 5750 3200 50  0001 C CNN
+	1    5750 3200
+>>>>>>> Stashed changes
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0135
 U 1 1 5DABEACB
+<<<<<<< Updated upstream
 P 2450 2100
 F 0 "#PWR?" H 2450 1850 50  0001 C CNN
 F 1 "GND" H 2455 1927 50  0000 C CNN
 F 2 "" H 2450 2100 50  0001 C CNN
 F 3 "" H 2450 2100 50  0001 C CNN
 	1    2450 2100
+=======
+P 5200 3200
+F 0 "#PWR0135" H 5200 2950 50  0001 C CNN
+F 1 "GND" H 5205 3027 50  0000 C CNN
+F 2 "" H 5200 3200 50  0001 C CNN
+F 3 "" H 5200 3200 50  0001 C CNN
+	1    5200 3200
+>>>>>>> Stashed changes
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -121,25 +195,43 @@ Wire Wire Line
 Wire Wire Line
 	3000 1900 3500 1900
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0136
 U 1 1 5DAC119C
+<<<<<<< Updated upstream
 P 1400 1350
 F 0 "#PWR?" H 1400 1100 50  0001 C CNN
 F 1 "GND" H 1405 1177 50  0000 C CNN
 F 2 "" H 1400 1350 50  0001 C CNN
 F 3 "" H 1400 1350 50  0001 C CNN
 	1    1400 1350
+=======
+P 4100 2450
+F 0 "#PWR0136" H 4100 2200 50  0001 C CNN
+F 1 "GND" H 4105 2277 50  0000 C CNN
+F 2 "" H 4100 2450 50  0001 C CNN
+F 3 "" H 4100 2450 50  0001 C CNN
+	1    4100 2450
+>>>>>>> Stashed changes
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VDD #PWR?
+L power:VDD #PWR0137
 U 1 1 5DAC17A9
+<<<<<<< Updated upstream
 P 1400 1850
 F 0 "#PWR?" H 1400 1700 50  0001 C CNN
 F 1 "VDD" H 1417 2023 50  0000 C CNN
 F 2 "" H 1400 1850 50  0001 C CNN
 F 3 "" H 1400 1850 50  0001 C CNN
 	1    1400 1850
+=======
+P 4100 2950
+F 0 "#PWR0137" H 4100 2800 50  0001 C CNN
+F 1 "VDD" H 4117 3123 50  0000 C CNN
+F 2 "" H 4100 2950 50  0001 C CNN
+F 3 "" H 4100 2950 50  0001 C CNN
+	1    4100 2950
+>>>>>>> Stashed changes
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -149,47 +241,94 @@ Wire Wire Line
 Text Label 2850 1600 0    50   ~ 0
 PG
 $Comp
-L Device:R R?
+L Device:R R20
 U 1 1 5DAB9AC4
+<<<<<<< Updated upstream
 P 5350 1800
 F 0 "R?" V 5143 1800 50  0000 C CNN
 F 1 "20k" V 5234 1800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5280 1800 50  0001 C CNN
 F 3 "~" H 5350 1800 50  0001 C CNN
 	1    5350 1800
+=======
+P 8100 2900
+F 0 "R20" V 7893 2900 50  0000 C CNN
+F 1 "100k" V 7984 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8030 2900 50  0001 C CNN
+F 3 "~" H 8100 2900 50  0001 C CNN
+	1    8100 2900
+>>>>>>> Stashed changes
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0138
 U 1 1 5DABB368
+<<<<<<< Updated upstream
 P 5650 1800
 F 0 "#PWR?" H 5650 1550 50  0001 C CNN
 F 1 "GND" H 5655 1627 50  0000 C CNN
 F 2 "" H 5650 1800 50  0001 C CNN
 F 3 "" H 5650 1800 50  0001 C CNN
 	1    5650 1800
+=======
+P 8400 2900
+F 0 "#PWR0138" H 8400 2650 50  0001 C CNN
+F 1 "GND" H 8405 2727 50  0000 C CNN
+F 2 "" H 8400 2900 50  0001 C CNN
+F 3 "" H 8400 2900 50  0001 C CNN
+	1    8400 2900
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR?
+L Device:C C7
+U 1 1 5DABF022
+P 8400 2550
+F 0 "C7" H 8515 2596 50  0000 L CNN
+F 1 "22u" H 8515 2505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 8438 2400 50  0001 C CNN
+F 3 "~" H 8400 2550 50  0001 C CNN
+	1    8400 2550
+>>>>>>> Stashed changes
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0139
 U 1 1 5DAC0813
+<<<<<<< Updated upstream
 P 5650 1200
 F 0 "#PWR?" H 5650 1050 50  0001 C CNN
 F 1 "+3V3" H 5665 1373 50  0000 C CNN
 F 2 "" H 5650 1200 50  0001 C CNN
 F 3 "" H 5650 1200 50  0001 C CNN
 	1    5650 1200
+=======
+P 8400 2150
+F 0 "#PWR0139" H 8400 2000 50  0001 C CNN
+F 1 "+3V3" H 8415 2323 50  0000 C CNN
+F 2 "" H 8400 2150 50  0001 C CNN
+F 3 "" H 8400 2150 50  0001 C CNN
+	1    8400 2150
+>>>>>>> Stashed changes
 	1    0    0    -1  
 $EndComp
 $Comp
-L pspice:INDUCTOR L?
+L pspice:INDUCTOR L1
 U 1 1 5DABCD6A
+<<<<<<< Updated upstream
 P 4250 1200
 F 0 "L?" H 4250 1415 50  0000 C CNN
 F 1 "2u2" H 4250 1324 50  0000 C CNN
 F 2 "Inductor_SMD:L_Taiyo-Yuden_NR-30xx" H 4250 1323 50  0001 C CNN
 F 3 "~" H 4250 1200 50  0001 C CNN
 	1    4250 1200
+=======
+P 7000 2300
+F 0 "L1" H 7000 2515 50  0000 C CNN
+F 1 "2u2" H 7000 2424 50  0000 C CNN
+F 2 "" H 7000 2423 50  0001 C CNN
+F 3 "~" H 7000 2300 50  0001 C CNN
+	1    7000 2300
+>>>>>>> Stashed changes
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -198,14 +337,23 @@ Wire Wire Line
 	4500 1200 4550 1200
 Connection ~ 4550 1200
 $Comp
-L Device:R R?
+L Device:R R18
 U 1 1 5DACCDF7
+<<<<<<< Updated upstream
 P 4550 1500
 F 0 "R?" H 4620 1546 50  0000 L CNN
 F 1 "200" H 4620 1455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4480 1500 50  0001 C CNN
 F 3 "~" H 4550 1500 50  0001 C CNN
 	1    4550 1500
+=======
+P 7300 2550
+F 0 "R18" H 7370 2596 50  0000 L CNN
+F 1 "100k" H 7370 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7230 2550 50  0001 C CNN
+F 3 "~" H 7300 2550 50  0001 C CNN
+	1    7300 2550
+>>>>>>> Stashed changes
 	1    0    0    -1  
 $EndComp
 Text Label 4800 1650 0    50   ~ 0
@@ -311,6 +459,7 @@ Wire Wire Line
 Text Label 2850 3150 0    50   ~ 0
 PG
 $Comp
+<<<<<<< Updated upstream
 L Device:R R?
 U 1 1 5DB05FB1
 P 5350 3350
@@ -745,6 +894,16 @@ F 1 "52k5" H 4900 3000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4980 3050 50  0001 C CNN
 F 3 "~" H 5050 3050 50  0001 C CNN
 	1    5050 3050
+=======
+L Device:R R19
+U 1 1 5DAC6397
+P 7800 2550
+F 0 "R19" H 7593 2550 50  0000 C CNN
+F 1 "312k5" H 7684 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7730 2550 50  0001 C CNN
+F 3 "~" H 7800 2550 50  0001 C CNN
+	1    7800 2550
+>>>>>>> Stashed changes
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
