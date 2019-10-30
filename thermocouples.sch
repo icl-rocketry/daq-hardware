@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 3 5
 Title ""
 Date ""
 Rev ""
@@ -26,10 +26,10 @@ F 3 "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 2950 2400 50  0
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C9
+L Device:C C15
 U 1 1 5DA633EE
 P 2000 2400
-F 0 "C9" H 2115 2446 50  0000 L CNN
+F 0 "C15" H 2115 2446 50  0000 L CNN
 F 1 "100nF" H 2115 2355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2038 2250 50  0001 C CNN
 F 3 "~" H 2000 2400 50  0001 C CNN
@@ -45,10 +45,10 @@ Wire Wire Line
 Wire Wire Line
 	2000 2000 2000 2250
 $Comp
-L power:+3V3 #PWR0145
+L power:+3V3 #PWR043
 U 1 1 5DA64666
 P 2000 1900
-F 0 "#PWR0145" H 2000 1750 50  0001 C CNN
+F 0 "#PWR043" H 2000 1750 50  0001 C CNN
 F 1 "+3V3" H 2015 2073 50  0000 C CNN
 F 2 "" H 2000 1900 50  0001 C CNN
 F 3 "" H 2000 1900 50  0001 C CNN
@@ -59,10 +59,10 @@ Wire Wire Line
 	2000 1900 2000 2000
 Connection ~ 2000 2000
 $Comp
-L power:GND #PWR0146
+L power:GND #PWR044
 U 1 1 5DA65041
 P 2000 2900
-F 0 "#PWR0146" H 2000 2650 50  0001 C CNN
+F 0 "#PWR044" H 2000 2650 50  0001 C CNN
 F 1 "GND" H 2005 2727 50  0000 C CNN
 F 2 "" H 2000 2900 50  0001 C CNN
 F 3 "" H 2000 2900 50  0001 C CNN
@@ -73,10 +73,10 @@ Wire Wire Line
 	2000 2900 2000 2800
 Connection ~ 2000 2800
 $Comp
-L Device:C C10
+L Device:C C16
 U 1 1 5DA6662C
 P 2400 2400
-F 0 "C10" H 2515 2446 50  0000 L CNN
+F 0 "C16" H 2515 2446 50  0000 L CNN
 F 1 "10nF" H 2515 2355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2438 2250 50  0001 C CNN
 F 3 "~" H 2400 2400 50  0001 C CNN
@@ -103,10 +103,10 @@ F 3 "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 6950 2400 50  0
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C13
+L Device:C C19
 U 1 1 5DAB0490
 P 6000 2400
-F 0 "C13" H 6115 2446 50  0000 L CNN
+F 0 "C19" H 6115 2446 50  0000 L CNN
 F 1 "100nF" H 6115 2355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6038 2250 50  0001 C CNN
 F 3 "~" H 6000 2400 50  0001 C CNN
@@ -122,10 +122,10 @@ Wire Wire Line
 Wire Wire Line
 	6000 2000 6000 2250
 $Comp
-L power:+3V3 #PWR0147
+L power:+3V3 #PWR047
 U 1 1 5DAB049A
 P 6000 1900
-F 0 "#PWR0147" H 6000 1750 50  0001 C CNN
+F 0 "#PWR047" H 6000 1750 50  0001 C CNN
 F 1 "+3V3" H 6015 2073 50  0000 C CNN
 F 2 "" H 6000 1900 50  0001 C CNN
 F 3 "" H 6000 1900 50  0001 C CNN
@@ -136,10 +136,10 @@ Wire Wire Line
 	6000 1900 6000 2000
 Connection ~ 6000 2000
 $Comp
-L power:GND #PWR0148
+L power:GND #PWR048
 U 1 1 5DAB04A2
 P 6000 2900
-F 0 "#PWR0148" H 6000 2650 50  0001 C CNN
+F 0 "#PWR048" H 6000 2650 50  0001 C CNN
 F 1 "GND" H 6005 2727 50  0000 C CNN
 F 2 "" H 6000 2900 50  0001 C CNN
 F 3 "" H 6000 2900 50  0001 C CNN
@@ -150,10 +150,10 @@ Wire Wire Line
 	6000 2900 6000 2800
 Connection ~ 6000 2800
 $Comp
-L Device:C C14
+L Device:C C20
 U 1 1 5DAB04AA
 P 6400 2400
-F 0 "C14" H 6515 2446 50  0000 L CNN
+F 0 "C20" H 6515 2446 50  0000 L CNN
 F 1 "10nF" H 6515 2355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6438 2250 50  0001 C CNN
 F 3 "~" H 6400 2400 50  0001 C CNN
@@ -169,10 +169,10 @@ Wire Wire Line
 Wire Wire Line
 	6550 2550 6400 2550
 $Comp
-L Device:C C11
+L Device:C C17
 U 1 1 5DAB1C47
 P 4000 2400
-F 0 "C11" H 4115 2446 50  0000 L CNN
+F 0 "C17" H 4115 2446 50  0000 L CNN
 F 1 "100nF" H 4115 2355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4038 2250 50  0001 C CNN
 F 3 "~" H 4000 2400 50  0001 C CNN
@@ -186,10 +186,10 @@ Wire Wire Line
 Wire Wire Line
 	4000 2000 4000 2250
 $Comp
-L power:+3V3 #PWR0149
+L power:+3V3 #PWR045
 U 1 1 5DAB1C51
 P 4000 1900
-F 0 "#PWR0149" H 4000 1750 50  0001 C CNN
+F 0 "#PWR045" H 4000 1750 50  0001 C CNN
 F 1 "+3V3" H 4015 2073 50  0000 C CNN
 F 2 "" H 4000 1900 50  0001 C CNN
 F 3 "" H 4000 1900 50  0001 C CNN
@@ -200,10 +200,10 @@ Wire Wire Line
 	4000 1900 4000 2000
 Connection ~ 4000 2000
 $Comp
-L power:GND #PWR0150
+L power:GND #PWR046
 U 1 1 5DAB1C59
 P 4000 2900
-F 0 "#PWR0150" H 4000 2650 50  0001 C CNN
+F 0 "#PWR046" H 4000 2650 50  0001 C CNN
 F 1 "GND" H 4005 2727 50  0000 C CNN
 F 2 "" H 4000 2900 50  0001 C CNN
 F 3 "" H 4000 2900 50  0001 C CNN
@@ -214,10 +214,10 @@ Wire Wire Line
 	4000 2900 4000 2800
 Connection ~ 4000 2800
 $Comp
-L Device:C C12
+L Device:C C18
 U 1 1 5DAB1C61
 P 4400 2400
-F 0 "C12" H 4515 2446 50  0000 L CNN
+F 0 "C18" H 4515 2446 50  0000 L CNN
 F 1 "10nF" H 4515 2355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4438 2250 50  0001 C CNN
 F 3 "~" H 4400 2400 50  0001 C CNN
@@ -244,10 +244,10 @@ F 3 "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 8950 2400 50  0
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C15
+L Device:C C21
 U 1 1 5DAC219C
 P 8000 2400
-F 0 "C15" H 8115 2446 50  0000 L CNN
+F 0 "C21" H 8115 2446 50  0000 L CNN
 F 1 "100nF" H 8115 2355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8038 2250 50  0001 C CNN
 F 3 "~" H 8000 2400 50  0001 C CNN
@@ -263,10 +263,10 @@ Wire Wire Line
 Wire Wire Line
 	8000 2000 8000 2250
 $Comp
-L power:+3V3 #PWR0151
+L power:+3V3 #PWR049
 U 1 1 5DAC21A6
 P 8000 1900
-F 0 "#PWR0151" H 8000 1750 50  0001 C CNN
+F 0 "#PWR049" H 8000 1750 50  0001 C CNN
 F 1 "+3V3" H 8015 2073 50  0000 C CNN
 F 2 "" H 8000 1900 50  0001 C CNN
 F 3 "" H 8000 1900 50  0001 C CNN
@@ -277,10 +277,10 @@ Wire Wire Line
 	8000 1900 8000 2000
 Connection ~ 8000 2000
 $Comp
-L power:GND #PWR0152
+L power:GND #PWR050
 U 1 1 5DAC21AE
 P 8000 2900
-F 0 "#PWR0152" H 8000 2650 50  0001 C CNN
+F 0 "#PWR050" H 8000 2650 50  0001 C CNN
 F 1 "GND" H 8005 2727 50  0000 C CNN
 F 2 "" H 8000 2900 50  0001 C CNN
 F 3 "" H 8000 2900 50  0001 C CNN
@@ -291,10 +291,10 @@ Wire Wire Line
 	8000 2900 8000 2800
 Connection ~ 8000 2800
 $Comp
-L Device:C C16
+L Device:C C22
 U 1 1 5DAC21B6
 P 8400 2400
-F 0 "C16" H 8515 2446 50  0000 L CNN
+F 0 "C22" H 8515 2446 50  0000 L CNN
 F 1 "10nF" H 8515 2355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8438 2250 50  0001 C CNN
 F 3 "~" H 8400 2400 50  0001 C CNN
@@ -317,8 +317,6 @@ Text HLabel 5350 2500 2    50   Input ~ 0
 ~CS_3
 Text HLabel 9350 2200 2    50   Input ~ 0
 SCLK
-Text HLabel 9350 2300 2    50   Input ~ 0
-MISO
 Text HLabel 9350 2500 2    50   Input ~ 0
 ~CS_4
 Wire Wire Line
@@ -331,17 +329,6 @@ Wire Wire Line
 Connection ~ 2400 2550
 Text Label 2000 1500 0    50   ~ 0
 T1_T-
-$Comp
-L Connector:Screw_Terminal_01x02 J6
-U 1 1 5DAD8258
-P 2550 1500
-F 0 "J6" H 2630 1492 50  0000 L CNN
-F 1 "Screw_Terminal_Thermo_1" H 2630 1401 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 2550 1500 50  0001 C CNN
-F 3 "~" H 2550 1500 50  0001 C CNN
-	1    2550 1500
-	1    0    0    -1  
-$EndComp
 Text Label 2400 2100 0    50   ~ 0
 T1_T+
 Text Label 2400 2700 0    50   ~ 0
@@ -351,17 +338,6 @@ Wire Wire Line
 Connection ~ 4400 2550
 Text Label 4400 2700 0    50   ~ 0
 T2_T-
-$Comp
-L Connector:Screw_Terminal_01x02 J7
-U 1 1 5DAE1281
-P 4550 1500
-F 0 "J7" H 4630 1492 50  0000 L CNN
-F 1 "Screw_Terminal_Thermo_2" H 4630 1401 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 4550 1500 50  0001 C CNN
-F 3 "~" H 4550 1500 50  0001 C CNN
-	1    4550 1500
-	1    0    0    -1  
-$EndComp
 Connection ~ 4400 2250
 Wire Wire Line
 	4950 2000 4000 2000
@@ -402,17 +378,6 @@ Text Label 6000 1600 0    50   ~ 0
 T3_T+
 Text Label 6000 1500 0    50   ~ 0
 T3_T-
-$Comp
-L Connector:Screw_Terminal_01x02 J8
-U 1 1 5DAE7830
-P 6550 1500
-F 0 "J8" H 6630 1492 50  0000 L CNN
-F 1 "Screw_Terminal_Thermo_3" H 6630 1401 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 6550 1500 50  0001 C CNN
-F 3 "~" H 6550 1500 50  0001 C CNN
-	1    6550 1500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6000 1500 6350 1500
 Wire Wire Line
@@ -431,17 +396,6 @@ Text Label 8000 1600 0    50   ~ 0
 T4_T+
 Text Label 8000 1500 0    50   ~ 0
 T4_T-
-$Comp
-L Connector:Screw_Terminal_01x02 J9
-U 1 1 5DAEBA70
-P 8550 1500
-F 0 "J9" H 8630 1492 50  0000 L CNN
-F 1 "Screw_Terminal_Thermo_4" H 8630 1401 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 8550 1500 50  0001 C CNN
-F 3 "~" H 8550 1500 50  0001 C CNN
-	1    8550 1500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8000 1500 8350 1500
 Wire Wire Line
@@ -452,14 +406,60 @@ Wire Wire Line
 	2000 1600 2350 1600
 Text HLabel 7350 2200 2    50   Input ~ 0
 SCLK
-Text HLabel 7350 2300 2    50   Input ~ 0
-MISO
 Text HLabel 5350 2200 2    50   Input ~ 0
 SCLK
-Text HLabel 5350 2300 2    50   Input ~ 0
-MISO
 Text HLabel 3350 2200 2    50   Input ~ 0
 SCLK
-Text HLabel 3350 2300 2    50   Input ~ 0
+Text HLabel 3350 2300 2    50   Output ~ 0
 MISO
+Text HLabel 5350 2300 2    50   Output ~ 0
+MISO
+Text HLabel 7350 2300 2    50   Output ~ 0
+MISO
+Text HLabel 9350 2300 2    50   Output ~ 0
+MISO
+$Comp
+L Connector:Screw_Terminal_01x02 J8
+U 1 1 5DAEBA70
+P 8550 1500
+F 0 "J8" H 8630 1492 50  0000 L CNN
+F 1 "Screw_Terminal_Thermo_4" H 8630 1401 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 8550 1500 50  0001 C CNN
+F 3 "~" H 8550 1500 50  0001 C CNN
+	1    8550 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J7
+U 1 1 5DAE7830
+P 6550 1500
+F 0 "J7" H 6630 1492 50  0000 L CNN
+F 1 "Screw_Terminal_Thermo_3" H 6630 1401 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 6550 1500 50  0001 C CNN
+F 3 "~" H 6550 1500 50  0001 C CNN
+	1    6550 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J6
+U 1 1 5DAE1281
+P 4550 1500
+F 0 "J6" H 4630 1492 50  0000 L CNN
+F 1 "Screw_Terminal_Thermo_2" H 4630 1401 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 4550 1500 50  0001 C CNN
+F 3 "~" H 4550 1500 50  0001 C CNN
+	1    4550 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J5
+U 1 1 5DAD8258
+P 2550 1500
+F 0 "J5" H 2630 1492 50  0000 L CNN
+F 1 "Screw_Terminal_Thermo_1" H 2630 1401 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 2550 1500 50  0001 C CNN
+F 3 "~" H 2550 1500 50  0001 C CNN
+	1    2550 1500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
