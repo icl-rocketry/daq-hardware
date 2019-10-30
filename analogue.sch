@@ -231,7 +231,7 @@ U 1 1 5DBB407D
 P 3100 5250
 F 0 "J14" H 3018 5025 50  0000 C CNN
 F 1 "Screw_Terminal_01x01" H 3018 5116 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 3100 5250 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-2.54mm_2pol" H 3100 5250 50  0001 C CNN
 F 3 "~" H 3100 5250 50  0001 C CNN
 	1    3100 5250
 	-1   0    0    -1  
@@ -295,7 +295,7 @@ U 1 1 5DC43232
 P 3100 4350
 F 0 "J13" H 3018 4125 50  0000 C CNN
 F 1 "Screw_Terminal_01x01" H 3018 4216 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 3100 4350 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-2.54mm_2pol" H 3100 4350 50  0001 C CNN
 F 3 "~" H 3100 4350 50  0001 C CNN
 	1    3100 4350
 	-1   0    0    -1  
@@ -359,7 +359,7 @@ U 1 1 5DC47ECD
 P 3100 3400
 F 0 "J12" H 3018 3175 50  0000 C CNN
 F 1 "Screw_Terminal_01x01" H 3018 3266 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 3100 3400 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-2.54mm_2pol" H 3100 3400 50  0001 C CNN
 F 3 "~" H 3100 3400 50  0001 C CNN
 	1    3100 3400
 	-1   0    0    -1  
@@ -421,7 +421,7 @@ U 1 1 5DC4E71A
 P 3100 2550
 F 0 "J11" H 3018 2325 50  0000 C CNN
 F 1 "Screw_Terminal_01x01" H 3018 2416 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 3100 2550 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-2.54mm_2pol" H 3100 2550 50  0001 C CNN
 F 3 "~" H 3100 2550 50  0001 C CNN
 	1    3100 2550
 	-1   0    0    -1  

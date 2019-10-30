@@ -57,7 +57,7 @@ U 1 1 5DA64A7C
 P 2600 2150
 F 0 "U1" H 2750 3050 50  0000 C CNN
 F 1 "CP2102N-A01-GQFN24" H 3150 2950 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 3050 1350 50  0001 L CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm_ThermalVias" H 3050 1350 50  0001 L CNN
 F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 2650 1100 50  0001 C CNN
 	1    2600 2150
 	1    0    0    -1  
@@ -789,11 +789,7 @@ Connection ~ 9750 2950
 Text Notes 9750 650  0    50   ~ 0
 4-bit SDIO bus
 Wire Wire Line
-	6550 4400 6850 4400
-Wire Wire Line
 	6550 4500 6850 4500
-Text Label 6850 4400 2    50   ~ 0
-~TC_CS1
 Text Label 6850 4500 2    50   ~ 0
 ~TC_CS2
 Text Label 8300 4100 0    50   ~ 0
@@ -825,8 +821,8 @@ Wire Wire Line
 Text Label 6850 5000 2    50   ~ 0
 PTAP3
 Wire Wire Line
-	6550 4600 6850 4600
-Text Label 6850 4600 2    50   ~ 0
+	6550 4400 6850 4400
+Text Label 6850 4400 2    50   ~ 0
 ~TC_CS3
 Wire Wire Line
 	6550 4700 6850 4700
@@ -1057,4 +1053,8 @@ NoConn ~ 3200 2250
 NoConn ~ 3200 2050
 NoConn ~ 3200 1650
 NoConn ~ 3200 1550
+Wire Wire Line
+	6550 4600 6850 4600
+Text Label 6850 4600 2    50   ~ 0
+~TC_CS1
 $EndSCHEMATC

@@ -33,23 +33,12 @@ Connection ~ 3050 1200
 Wire Wire Line
 	3050 1200 3100 1200
 $Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5DAB6ED0
-P 1050 1250
-F 0 "J3" H 968 1467 50  0000 C CNN
-F 1 "Conn_01x02" H 968 1376 50  0000 C CNN
-F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 1050 1250 50  0001 C CNN
-F 3 "~" H 1050 1250 50  0001 C CNN
-	1    1050 1250
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Connector:Screw_Terminal_01x02 J4
 U 1 1 5DAB7829
 P 1050 1850
 F 0 "J4" H 968 2067 50  0000 C CNN
 F 1 "Screw_Terminal_01x02" H 968 1976 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 1050 1850 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-2.54mm_2pol" H 1050 1850 50  0001 C CNN
 F 3 "~" H 1050 1850 50  0001 C CNN
 	1    1050 1850
 	-1   0    0    -1  
@@ -803,4 +792,57 @@ Connection ~ 3600 3650
 Wire Wire Line
 	3600 2150 3600 2100
 Connection ~ 3600 2100
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5DAB6ED0
+P 1050 1250
+F 0 "J3" H 968 1467 50  0000 C CNN
+F 1 "Conn_01x02" H 968 1376 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 1050 1250 50  0001 C CNN
+F 3 "~" H 1050 1250 50  0001 C CNN
+	1    1050 1250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Barrel_Jack_Switch J15
+U 1 1 5DBA971E
+P 1050 2750
+F 0 "J15" H 1107 3067 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 1107 2976 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002" H 1100 2710 50  0001 C CNN
+F 3 "~" H 1100 2710 50  0001 C CNN
+	1    1050 2750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1350 2750
+$Comp
+L power:VDD #PWR0101
+U 1 1 5DBAE106
+P 1550 2600
+F 0 "#PWR0101" H 1550 2450 50  0001 C CNN
+F 1 "VDD" H 1567 2773 50  0000 C CNN
+F 2 "" H 1550 2600 50  0001 C CNN
+F 3 "" H 1550 2600 50  0001 C CNN
+	1    1550 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2650 1550 2650
+Wire Wire Line
+	1550 2650 1550 2600
+Wire Wire Line
+	1350 2850 1550 2850
+Wire Wire Line
+	1550 2850 1550 2900
+$Comp
+L power:GND #PWR0102
+U 1 1 5DBB2092
+P 1550 2900
+F 0 "#PWR0102" H 1550 2650 50  0001 C CNN
+F 1 "GND" H 1555 2727 50  0000 C CNN
+F 2 "" H 1550 2900 50  0001 C CNN
+F 3 "" H 1550 2900 50  0001 C CNN
+	1    1550 2900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

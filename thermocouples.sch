@@ -312,9 +312,9 @@ Wire Wire Line
 Text HLabel 3350 2500 2    50   Input ~ 0
 ~CS_1
 Text HLabel 7350 2500 2    50   Input ~ 0
-~CS_2
-Text HLabel 5350 2500 2    50   Input ~ 0
 ~CS_3
+Text HLabel 5350 2500 2    50   Input ~ 0
+~CS_2
 Text HLabel 9350 2200 2    50   Input ~ 0
 SCLK
 Text HLabel 9350 2500 2    50   Input ~ 0
@@ -424,7 +424,7 @@ U 1 1 5DAEBA70
 P 8550 1500
 F 0 "J8" H 8630 1492 50  0000 L CNN
 F 1 "Screw_Terminal_Thermo_4" H 8630 1401 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 8550 1500 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-2.54mm_2pol" H 8550 1500 50  0001 C CNN
 F 3 "~" H 8550 1500 50  0001 C CNN
 	1    8550 1500
 	1    0    0    -1  
@@ -435,7 +435,7 @@ U 1 1 5DAE7830
 P 6550 1500
 F 0 "J7" H 6630 1492 50  0000 L CNN
 F 1 "Screw_Terminal_Thermo_3" H 6630 1401 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 6550 1500 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-2.54mm_2pol" H 6550 1500 50  0001 C CNN
 F 3 "~" H 6550 1500 50  0001 C CNN
 	1    6550 1500
 	1    0    0    -1  
@@ -446,7 +446,7 @@ U 1 1 5DAE1281
 P 4550 1500
 F 0 "J6" H 4630 1492 50  0000 L CNN
 F 1 "Screw_Terminal_Thermo_2" H 4630 1401 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 4550 1500 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-2.54mm_2pol" H 4550 1500 50  0001 C CNN
 F 3 "~" H 4550 1500 50  0001 C CNN
 	1    4550 1500
 	1    0    0    -1  
@@ -457,7 +457,7 @@ U 1 1 5DAD8258
 P 2550 1500
 F 0 "J5" H 2630 1492 50  0000 L CNN
 F 1 "Screw_Terminal_Thermo_1" H 2630 1401 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 2550 1500 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-2.54mm_2pol" H 2550 1500 50  0001 C CNN
 F 3 "~" H 2550 1500 50  0001 C CNN
 	1    2550 1500
 	1    0    0    -1  

@@ -213,7 +213,7 @@ U 1 1 5DB4DA71
 P 4450 2650
 F 0 "JP1" H 4450 2855 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 4450 2764 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm" H 4450 2650 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels" H 4450 2650 50  0001 C CNN
 F 3 "~" H 4450 2650 50  0001 C CNN
 	1    4450 2650
 	1    0    0    -1  
