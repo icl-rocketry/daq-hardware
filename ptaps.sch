@@ -1,0 +1,286 @@
+EESchema Schematic File Version 4
+LIBS:daq-hardware-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5DD0A0E4
+P 4000 2950
+F 0 "J?" H 4080 2992 50  0000 L CNN
+F 1 "Conn_01x03" H 4080 2901 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B03B-XH-AM_1x03_P2.50mm_Vertical" H 4000 2950 50  0001 C CNN
+F 3 "~" H 4000 2950 50  0001 C CNN
+	1    4000 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DD0CBEA
+P 3550 3000
+F 0 "#PWR?" H 3550 2750 50  0001 C CNN
+F 1 "GND" H 3555 2827 50  0000 C CNN
+F 2 "" H 3550 3000 50  0001 C CNN
+F 3 "" H 3550 3000 50  0001 C CNN
+	1    3550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DD0BC1A
+P 3500 2850
+F 0 "#PWR?" H 3500 2700 50  0001 C CNN
+F 1 "+5V" H 3515 3023 50  0000 C CNN
+F 2 "" H 3500 2850 50  0001 C CNN
+F 3 "" H 3500 2850 50  0001 C CNN
+	1    3500 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3000 3550 2850
+Wire Wire Line
+	3550 2850 3800 2850
+Wire Wire Line
+	3500 2850 3500 2950
+Wire Wire Line
+	3500 2950 3800 2950
+Text Notes 4150 4200 0    50   ~ 0
+Centre positive for safety during wire reversals
+$Comp
+L Device:R_Small R?
+U 1 1 5DD12924
+P 3700 3200
+F 0 "R?" H 3759 3246 50  0000 L CNN
+F 1 "22k" H 3759 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3700 3200 50  0001 C CNN
+F 3 "~" H 3700 3200 50  0001 C CNN
+	1    3700 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3100 3700 3050
+Wire Wire Line
+	3700 3050 3800 3050
+$Comp
+L Device:R_Small R?
+U 1 1 5DD1309E
+P 3700 3500
+F 0 "R?" H 3759 3546 50  0000 L CNN
+F 1 "43k" H 3759 3455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3700 3500 50  0001 C CNN
+F 3 "~" H 3700 3500 50  0001 C CNN
+	1    3700 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DD13E80
+P 3700 3650
+F 0 "#PWR?" H 3700 3400 50  0001 C CNN
+F 1 "GND" H 3705 3477 50  0000 C CNN
+F 2 "" H 3700 3650 50  0001 C CNN
+F 3 "" H 3700 3650 50  0001 C CNN
+	1    3700 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3650 3700 3600
+Wire Wire Line
+	3700 3400 3700 3350
+Wire Wire Line
+	3700 3350 3800 3350
+Connection ~ 3700 3350
+Wire Wire Line
+	3700 3350 3700 3300
+Text HLabel 3800 3350 2    50   Output ~ 0
+PTAP1
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5DD1A9B8
+P 5100 2950
+F 0 "J?" H 5180 2992 50  0000 L CNN
+F 1 "Conn_01x03" H 5180 2901 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B03B-XH-AM_1x03_P2.50mm_Vertical" H 5100 2950 50  0001 C CNN
+F 3 "~" H 5100 2950 50  0001 C CNN
+	1    5100 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DD1A9C2
+P 4650 3000
+F 0 "#PWR?" H 4650 2750 50  0001 C CNN
+F 1 "GND" H 4655 2827 50  0000 C CNN
+F 2 "" H 4650 3000 50  0001 C CNN
+F 3 "" H 4650 3000 50  0001 C CNN
+	1    4650 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DD1A9CC
+P 4600 2850
+F 0 "#PWR?" H 4600 2700 50  0001 C CNN
+F 1 "+5V" H 4615 3023 50  0000 C CNN
+F 2 "" H 4600 2850 50  0001 C CNN
+F 3 "" H 4600 2850 50  0001 C CNN
+	1    4600 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3000 4650 2850
+Wire Wire Line
+	4650 2850 4900 2850
+Wire Wire Line
+	4600 2850 4600 2950
+Wire Wire Line
+	4600 2950 4900 2950
+$Comp
+L Device:R_Small R?
+U 1 1 5DD1A9DA
+P 4800 3200
+F 0 "R?" H 4859 3246 50  0000 L CNN
+F 1 "22k" H 4859 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4800 3200 50  0001 C CNN
+F 3 "~" H 4800 3200 50  0001 C CNN
+	1    4800 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3100 4800 3050
+Wire Wire Line
+	4800 3050 4900 3050
+$Comp
+L Device:R_Small R?
+U 1 1 5DD1A9E6
+P 4800 3500
+F 0 "R?" H 4859 3546 50  0000 L CNN
+F 1 "43k" H 4859 3455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4800 3500 50  0001 C CNN
+F 3 "~" H 4800 3500 50  0001 C CNN
+	1    4800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DD1A9F0
+P 4800 3650
+F 0 "#PWR?" H 4800 3400 50  0001 C CNN
+F 1 "GND" H 4805 3477 50  0000 C CNN
+F 2 "" H 4800 3650 50  0001 C CNN
+F 3 "" H 4800 3650 50  0001 C CNN
+	1    4800 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3650 4800 3600
+Wire Wire Line
+	4800 3400 4800 3350
+Wire Wire Line
+	4800 3350 4900 3350
+Connection ~ 4800 3350
+Wire Wire Line
+	4800 3350 4800 3300
+Text HLabel 4900 3350 2    50   Output ~ 0
+PTAP2
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5DD242FB
+P 6150 2950
+F 0 "J?" H 6230 2992 50  0000 L CNN
+F 1 "Conn_01x03" H 6230 2901 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B03B-XH-AM_1x03_P2.50mm_Vertical" H 6150 2950 50  0001 C CNN
+F 3 "~" H 6150 2950 50  0001 C CNN
+	1    6150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DD24305
+P 5700 3000
+F 0 "#PWR?" H 5700 2750 50  0001 C CNN
+F 1 "GND" H 5705 2827 50  0000 C CNN
+F 2 "" H 5700 3000 50  0001 C CNN
+F 3 "" H 5700 3000 50  0001 C CNN
+	1    5700 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DD2430F
+P 5650 2850
+F 0 "#PWR?" H 5650 2700 50  0001 C CNN
+F 1 "+5V" H 5665 3023 50  0000 C CNN
+F 2 "" H 5650 2850 50  0001 C CNN
+F 3 "" H 5650 2850 50  0001 C CNN
+	1    5650 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3000 5700 2850
+Wire Wire Line
+	5700 2850 5950 2850
+Wire Wire Line
+	5650 2850 5650 2950
+Wire Wire Line
+	5650 2950 5950 2950
+$Comp
+L Device:R_Small R?
+U 1 1 5DD2431D
+P 5850 3200
+F 0 "R?" H 5909 3246 50  0000 L CNN
+F 1 "22k" H 5909 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5850 3200 50  0001 C CNN
+F 3 "~" H 5850 3200 50  0001 C CNN
+	1    5850 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3100 5850 3050
+Wire Wire Line
+	5850 3050 5950 3050
+$Comp
+L Device:R_Small R?
+U 1 1 5DD24329
+P 5850 3500
+F 0 "R?" H 5909 3546 50  0000 L CNN
+F 1 "43k" H 5909 3455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5850 3500 50  0001 C CNN
+F 3 "~" H 5850 3500 50  0001 C CNN
+	1    5850 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DD24333
+P 5850 3650
+F 0 "#PWR?" H 5850 3400 50  0001 C CNN
+F 1 "GND" H 5855 3477 50  0000 C CNN
+F 2 "" H 5850 3650 50  0001 C CNN
+F 3 "" H 5850 3650 50  0001 C CNN
+	1    5850 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3650 5850 3600
+Wire Wire Line
+	5850 3400 5850 3350
+Wire Wire Line
+	5850 3350 5950 3350
+Connection ~ 5850 3350
+Wire Wire Line
+	5850 3350 5850 3300
+Text HLabel 5950 3350 2    50   Output ~ 0
+PTAP3
+$EndSCHEMATC
