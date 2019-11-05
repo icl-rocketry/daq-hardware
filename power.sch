@@ -248,7 +248,7 @@ Wire Wire Line
 Wire Wire Line
 	3100 3150 2850 3150
 Text Label 2850 3150 0    50   ~ 0
-PG
+PG2
 $Comp
 L Device:R R24
 U 1 1 5DB05FB1
@@ -299,7 +299,7 @@ F 3 "~" H 4550 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 4800 3200 0    50   ~ 0
-PG
+PG2
 Wire Wire Line
 	4550 3200 4800 3200
 Wire Wire Line
