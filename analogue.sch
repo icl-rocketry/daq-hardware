@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 5 7
 Title ""
 Date ""
 Rev ""
@@ -84,7 +84,7 @@ U 1 1 5DB818AE
 P 6450 3500
 F 0 "C27" V 6198 3500 50  0000 C CNN
 F 1 "220nF" V 6289 3500 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 6488 3350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6488 3350 50  0001 C CNN
 F 3 "~" H 6450 3500 50  0001 C CNN
 	1    6450 3500
 	0    1    1    0   
