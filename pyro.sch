@@ -96,7 +96,7 @@ F 3 "~" H 5100 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4900 3950 4400 3950
+	4900 3950 4700 3950
 Wire Wire Line
 	5200 4150 5200 4350
 $Comp
@@ -168,7 +168,7 @@ $EndComp
 Wire Wire Line
 	5750 4150 6050 4150
 Connection ~ 6050 4150
-Text Label 4400 3950 0    50   ~ 0
+Text Label 4700 3950 0    50   ~ 0
 Fire
 Wire Wire Line
 	5750 3700 5500 3700
@@ -198,7 +198,7 @@ Wire Wire Line
 	3600 2050 3600 1900
 Text Notes 1850 1700 0    50   ~ 0
 External ematch supply
-Text HLabel 4400 3950 0    50   Input ~ 0
+Text HLabel 4700 3950 0    50   Input ~ 0
 Fire
 $Comp
 L Device:D_Schottky D?
@@ -287,25 +287,25 @@ F 3 "" H 5750 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_DPDT_x2 SW?
-U 1 1 5E12E318
+L Switch:SW_DPDT_x2 SW3
+U 2 1 5E12E318
 P 3800 2550
-F 0 "SW?" H 3800 2835 50  0000 C CNN
+F 0 "SW3" H 3800 2835 50  0000 C CNN
 F 1 "SW_DPDT_x2" H 3800 2744 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_CuK_JS202011AQN_DPDT_Angled" H 3800 2550 50  0001 C CNN
 F 3 "~" H 3800 2550 50  0001 C CNN
-	1    3800 2550
+	2    3800 2550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_DPDT_x2 SW?
-U 2 1 5E133738
+L Switch:SW_DPDT_x2 SW3
+U 1 1 5E133738
 P 3750 3050
-F 0 "SW?" H 3750 3335 50  0000 C CNN
+F 0 "SW3" H 3750 3335 50  0000 C CNN
 F 1 "SW_DPDT_x2" H 3750 3244 50  0000 C CNN
 F 2 "" H 3750 3050 50  0001 C CNN
 F 3 "~" H 3750 3050 50  0001 C CNN
-	2    3750 3050
+	1    3750 3050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -338,4 +338,42 @@ Wire Wire Line
 Connection ~ 3450 2800
 Wire Wire Line
 	3450 2800 3450 2550
+$Comp
+L Device:R R36
+U 1 1 5E14421F
+P 4200 3650
+F 0 "R36" H 4270 3696 50  0000 L CNN
+F 1 "470" H 4270 3605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4130 3650 50  0001 C CNN
+F 3 "~" H 4200 3650 50  0001 C CNN
+	1    4200 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D8
+U 1 1 5E144229
+P 4200 3350
+F 0 "D8" V 4239 3233 50  0000 R CNN
+F 1 "ARM" V 4148 3233 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 4200 3350 50  0001 C CNN
+F 3 "~" H 4200 3350 50  0001 C CNN
+	1    4200 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 3200 4200 3150
+Connection ~ 4200 3150
+$Comp
+L power:GND #PWR0181
+U 1 1 5E14A0DB
+P 4200 3850
+F 0 "#PWR0181" H 4200 3600 50  0001 C CNN
+F 1 "GND" H 4205 3677 50  0000 C CNN
+F 2 "" H 4200 3850 50  0001 C CNN
+F 3 "" H 4200 3850 50  0001 C CNN
+	1    4200 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3850 4200 3800
 $EndSCHEMATC

@@ -207,12 +207,12 @@ TX
 Text Label 3500 1850 2    50   ~ 0
 RX
 Wire Wire Line
-	6550 2800 6850 2800
+	6550 2800 6900 2800
 Wire Wire Line
-	6550 3000 6850 3000
-Text Label 6850 2800 2    50   ~ 0
+	6550 3000 6900 3000
+Text Label 6900 2800 2    50   ~ 0
 RX
-Text Label 6850 3000 2    50   ~ 0
+Text Label 6900 3000 2    50   ~ 0
 TX
 $Comp
 L Connector:Micro_SD_Card_Det_Hirose_DM3AT J2
@@ -352,8 +352,8 @@ Wire Wire Line
 Text Label 4950 2700 0    50   ~ 0
 RESET
 Wire Wire Line
-	6550 2700 6850 2700
-Text Label 6850 2700 2    50   ~ 0
+	6550 2700 6900 2700
+Text Label 6900 2700 2    50   ~ 0
 BOOT
 NoConn ~ 9350 2100
 NoConn ~ 9350 2000
@@ -370,16 +370,16 @@ SD_CLK
 Text Label 9000 1800 0    50   ~ 0
 SD_MISO
 Wire Wire Line
-	6850 3900 6550 3900
+	6900 3900 6550 3900
 Wire Wire Line
-	6850 4000 6550 4000
+	6900 4000 6550 4000
 Wire Wire Line
-	6850 4300 6550 4300
-Text Label 6850 3900 2    50   ~ 0
+	6900 4300 6550 4300
+Text Label 6900 3900 2    50   ~ 0
 SCLK
-Text Label 6850 4000 2    50   ~ 0
+Text Label 6900 4000 2    50   ~ 0
 MISO
-Text Label 6850 4300 2    50   ~ 0
+Text Label 6900 4300 2    50   ~ 0
 MOSI
 $Comp
 L Switch:SW_Push SW1
@@ -532,20 +532,20 @@ F6 "MISO" I L 8600 4100 50
 F7 "~CS_4" I L 8600 4600 50 
 $EndSheet
 Wire Wire Line
-	6550 2900 6850 2900
-Text Label 6850 2900 2    50   ~ 0
+	6550 2900 6900 2900
+Text Label 6900 2900 2    50   ~ 0
 SD_MISO
 Wire Wire Line
-	6550 3400 6850 3400
+	6550 3400 6900 3400
 Wire Wire Line
-	6550 3500 6850 3500
+	6550 3500 6900 3500
 Wire Wire Line
-	6550 3600 6850 3600
-Text Label 6850 3400 2    50   ~ 0
+	6550 3600 6900 3600
+Text Label 6900 3400 2    50   ~ 0
 SD_CS
-Text Label 6850 3600 2    50   ~ 0
+Text Label 6900 3600 2    50   ~ 0
 SD_MOSI
-Text Label 6850 3500 2    50   ~ 0
+Text Label 6900 3500 2    50   ~ 0
 SD_CLK
 $Comp
 L power:GND #PWR020
@@ -682,8 +682,8 @@ Connection ~ 9800 2500
 Text Notes 9750 650  0    50   ~ 0
 4-bit SDIO bus
 Wire Wire Line
-	6550 4500 6850 4500
-Text Label 6850 4500 2    50   ~ 0
+	6550 4500 6900 4500
+Text Label 6900 4500 2    50   ~ 0
 ~TC_CS2
 Text Label 8300 4100 0    50   ~ 0
 MISO
@@ -702,24 +702,24 @@ Text Label 8300 4400 0    50   ~ 0
 Wire Wire Line
 	8300 4400 8600 4400
 Wire Wire Line
-	6550 4800 6850 4800
+	6550 4800 6900 4800
 Wire Wire Line
-	6550 5000 6850 5000
-Text Label 6850 4800 2    50   ~ 0
+	6550 5000 6900 5000
+Text Label 6900 4800 2    50   ~ 0
 PTAP1
-Text Label 6850 5000 2    50   ~ 0
+Text Label 6900 5000 2    50   ~ 0
 PTAP2
 Wire Wire Line
-	6550 4900 6850 4900
-Text Label 6850 4900 2    50   ~ 0
+	6550 4900 6900 4900
+Text Label 6900 4900 2    50   ~ 0
 PTAP3
 Wire Wire Line
-	6550 4400 6850 4400
-Text Label 6850 4400 2    50   ~ 0
+	6550 4400 6900 4400
+Text Label 6900 4400 2    50   ~ 0
 ~TC_CS3
 Wire Wire Line
-	6550 4700 6850 4700
-Text Label 6850 4700 2    50   ~ 0
+	6550 4700 6900 4700
+Text Label 6900 4700 2    50   ~ 0
 ~TC_CS4
 Wire Wire Line
 	8600 4500 8300 4500
@@ -756,7 +756,7 @@ U 1 1 5DCBE0CD
 P 6100 1550
 F 0 "D2" V 6139 1433 50  0000 R CNN
 F 1 "LED" V 6048 1433 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Castellated" H 6100 1550 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 6100 1550 50  0001 C CNN
 F 3 "~" H 6100 1550 50  0001 C CNN
 	1    6100 1550
 	0    -1   -1   0   
@@ -848,8 +848,8 @@ Wire Wire Line
 Text Label 5500 1000 0    50   ~ 0
 LED
 Wire Wire Line
-	6550 3200 6850 3200
-Text Label 6850 3200 2    50   ~ 0
+	6550 3200 6900 3200
+Text Label 6900 3200 2    50   ~ 0
 LED
 $Sheet
 S 8600 5300 650  350 
@@ -872,16 +872,16 @@ F6 "~DRDY" O L 9900 4550 50
 F7 "CLKIN" I L 9900 4650 50 
 $EndSheet
 Wire Wire Line
-	6550 3800 6850 3800
-Text Label 6850 3800 2    50   ~ 0
+	6550 3800 6900 3800
+Text Label 6900 3800 2    50   ~ 0
 CLKOUT
 Wire Wire Line
 	9900 4650 9600 4650
 Text Label 9600 4650 0    50   ~ 0
 CLKOUT
 Wire Wire Line
-	6550 3700 6850 3700
-Text Label 6850 3700 2    50   ~ 0
+	6550 3700 6900 3700
+Text Label 6900 3700 2    50   ~ 0
 ~ADC_CS
 Text Label 9600 4450 0    50   ~ 0
 ~ADC_CS
@@ -944,21 +944,23 @@ NoConn ~ 3200 2050
 NoConn ~ 3200 1650
 NoConn ~ 3200 1550
 Wire Wire Line
-	6550 4600 6850 4600
-Text Label 6850 4600 2    50   ~ 0
+	6550 4600 6900 4600
+Text Label 6900 4600 2    50   ~ 0
 ~TC_CS1
 Wire Wire Line
 	8600 5500 8300 5500
 Text Label 8300 5500 0    50   ~ 0
 CONT
 $Sheet
-S 7600 5300 500  350 
+S 7600 5300 550  700 
 U 5DD033F3
 F0 "ptaps" 50
 F1 "ptaps.sch" 50
 F2 "PTAP1" O L 7600 5350 50 
 F3 "PTAP2" O L 7600 5450 50 
 F4 "PTAP3" O L 7600 5550 50 
+F5 "PTAP4" O L 7600 5650 50 
+F6 "PTAP5" O L 7600 5750 50 
 $EndSheet
 $Sheet
 S 9900 5900 550  300 
@@ -969,20 +971,20 @@ F2 "SDA" I L 9900 6000 50
 F3 "SCL" I L 9900 6100 50 
 $EndSheet
 Wire Wire Line
-	6550 4100 6850 4100
+	6550 4100 6900 4100
 Wire Wire Line
-	6550 4200 6850 4200
-Text Label 6850 4100 2    50   ~ 0
+	6550 4200 6900 4200
+Text Label 6900 4100 2    50   ~ 0
 SDA
-Text Label 6850 4200 2    50   ~ 0
+Text Label 6900 4200 2    50   ~ 0
 SCL
 Wire Wire Line
-	6550 3100 6850 3100
+	6550 3100 6900 3100
 Wire Wire Line
-	6550 3300 6850 3300
-Text Label 6850 3300 2    50   ~ 0
+	6550 3300 6900 3300
+Text Label 6900 3300 2    50   ~ 0
 PYRO
-Text Label 6850 3100 2    50   ~ 0
+Text Label 6900 3100 2    50   ~ 0
 CONT
 Wire Wire Line
 	9350 1300 9000 1300
@@ -1129,4 +1131,31 @@ Text Label 9750 3250 0    50   ~ 0
 SDA
 Text Label 9750 3350 0    50   ~ 0
 SCL
+$Comp
+L Connector_Generic:Conn_01x02 J38
+U 1 1 5E14F78B
+P 4750 2900
+F 0 "J38" H 4668 3117 50  0000 C CNN
+F 1 "Conn_01x02" H 4668 3026 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4750 2900 50  0001 C CNN
+F 3 "~" H 4750 2900 50  0001 C CNN
+	1    4750 2900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2900 5350 2900
+Wire Wire Line
+	4950 3000 5350 3000
+Text Label 4950 2900 0    50   ~ 0
+SENSVP
+Text Label 4950 3000 0    50   ~ 0
+SENSVN
+Wire Wire Line
+	7600 5650 7300 5650
+Wire Wire Line
+	7300 5750 7600 5750
+Text Label 7300 5650 0    50   ~ 0
+SENSVN
+Text Label 7300 5750 0    50   ~ 0
+SENSVP
 $EndSCHEMATC
