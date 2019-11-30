@@ -8,7 +8,7 @@
 //Gpios that we are going to read (digitalRead) and send to the Slaves
 //It's important that the Slave source code has this same array
 //with the same gpios in the same order
-uint8_t gpios[] = {23, 2};
+uint8_t gpios[] = {23};
 
 //In the setup function we'll calculate the gpio count and put in this variable,
 //so we don't need to change this variable everytime we change
