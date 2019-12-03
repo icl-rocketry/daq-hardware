@@ -1,140 +1,228 @@
-//Libs for espnow and wifi
 #include <esp_now.h>
 #include <WiFi.h>
 
-//Channel used in the connection
+// Global copy of slave
+esp_now_peer_info_t slave;
 #define CHANNEL 1
+#define PRINTSCANRESULTS 0
+#define DELETEBEFOREPAIR 0
 
-//Gpios that we are going to read (digitalRead) and send to the Slaves
-//It's important that the Slave source code has this same array
-//with the same gpios in the same order
-uint8_t gpios[] = {23, 2};
-
-//In the setup function we'll calculate the gpio count and put in this variable,
-//so we don't need to change this variable everytime we change
-//the gpios array total size, everything will be calculated automatically
-//on setup function
-int gpioCount;
-
-//Slaves Mac Addresses that will receive data from the Master
-//If you want to send data to all Slaves, use only the broadcast address {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}
-//If you want to send data to specific Slaves, put their Mac Addresses separeted with comma (use WiFi.macAddress())
-//to find out the Mac Address of the ESPs while in STATION MODE)
-uint8_t macSlaves[][6] = {
-  //To send to specific Slaves
-  //{0x24, 0x6F, 0xC4, 0x0E, 0x3F, 0xD1}, {0x24, 0x0A, 0xC4, 0x0E, 0x4E, 0xC3}
-  //Or to send to all Slaves
-  {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}
-};
-
-void setup() {
-  Serial.begin(115200);
-
-  //Calculation of gpio array size:
-  //sizeof(gpios) returns how many bytes "gpios" array points to.
-  //Elements in this array are of type uint8_t.
-  //sizeof(uint8_t) return how many bytes uint8_t type has.
-  //Therefore if we want to know how many gpios there are,
-  //we divide the total byte count of the array by how many bytes
-  //each element has.
-  gpioCount = sizeof(gpios)/sizeof(uint8_t);
-
-  //Puts ESP in STATION MODE
-  WiFi.mode(WIFI_STA);
-
-  //Shows on the Serial Monitor the STATION MODE Mac Address of this ESP
-  Serial.print("Mac Address in Station: "); 
-  Serial.println(WiFi.macAddress());
-
-  //Calls the function that will initialize the ESP-NOW protocol
-  InitESPNow();
-  //Calculation of the size of the slaves array:
-  //sizeof(macSlaves) returns how many bytes the macSlaves array points to.
-  //Each Slave Mac Address is an array with 6 elements.
-  //If each element is sizeof(uint8_t) bytes
-  //then the total of slaves is the division of the total amount of bytes
-  //by how many elements each MAc Address has
-  //by how much bytes each element has.
-  int slavesCount = sizeof(macSlaves)/6/sizeof(uint8_t);
-
-  //For each Slave
-  //for(int i=0; i)
-  //Registers the callback that will give us feedback about the sent data
-  //The function that will be executed is called OnDataSent
-  esp_now_register_send_cb(OnDataSent);
-  
-  //For each gpio
-  //for(int i=0; i)
-
-  //Calls the send function
-  send();
-}
-
+// Init ESP Now with fallback
 void InitESPNow() {
-  //If the initialization was successful
+  WiFi.disconnect();
   if (esp_now_init() == ESP_OK) {
     Serial.println("ESPNow Init Success");
   }
-  //If there was an error
   else {
     Serial.println("ESPNow Init Failed");
+    // Retry InitESPNow, add a counte and then restart?
+    // InitESPNow();
+    // or Simply Restart
     ESP.restart();
   }
 }
 
-//Function that will read the gpios and send
-//the read values to the others ESPs
-void send(){
-  //Array that will store the read values
-  uint8_t values[gpioCount];
+// Scan for slaves in AP mode
+void ScanForSlave() {
+  int8_t scanResults = WiFi.scanNetworks();
+  // reset on each scan
+  bool slaveFound = 0;
+  memset(&slave, 0, sizeof(slave));
 
-  //For each gpio
-  //for(int i=0; i<gpioCount; i++){
+  Serial.println("");
+  if (scanResults == 0) {
+    Serial.println("No WiFi devices in AP Mode found");
+  } else {
+    Serial.print("Found "); Serial.print(scanResults); Serial.println(" devices ");
+    for (int i = 0; i < scanResults; ++i) {
+      // Print SSID and RSSI for each device found
+      String SSID = WiFi.SSID(i);
+      int32_t RSSI = WiFi.RSSI(i);
+      String BSSIDstr = WiFi.BSSIDstr(i);
 
-    //Reads the value (HIGH or LOW) of the gpio
-    //and stores the value on the array
-    //values[i] = digitalRead(gpios[i]);
-  //}
-  int input[3] = {1, 0, 1};
-  //In this example we are going to use the broadcast address {0xFF, 0xFF,0xFF,0xFF,0xFF,0xFF}
-  //to send the values to all Slaves.
-  //If you want to send to a specific Slave, you have to put its Mac Address on macAddr.
-  //If you want to send to more then one specific Slave you will need to create
-  //a "for loop" and call esp_now_send for each mac address on the macSlaves array
-  uint8_t macAddr[] = {0xFF, 0xFF,0xFF,0xFF,0xFF,0xFF};
-  esp_err_t result = esp_now_send(macAddr, (uint8_t*) &input, sizeof(input));
-  //esp_err_t result = esp_now_send(macAddr, (uint8_t*) &values, sizeof(values));
+      if (PRINTSCANRESULTS) {
+        Serial.print(i + 1);
+        Serial.print(": ");
+        Serial.print(SSID);
+        Serial.print(" (");
+        Serial.print(RSSI);
+        Serial.print(")");
+        Serial.println("");
+      }
+      delay(10);
+      // Check if the current device starts with `Slave`
+      if (SSID.indexOf("Slave") == 0) {
+        // SSID of interest
+        Serial.println("Found a Slave.");
+        Serial.print(i + 1); Serial.print(": "); Serial.print(SSID); Serial.print(" ["); Serial.print(BSSIDstr); Serial.print("]"); Serial.print(" ("); Serial.print(RSSI); Serial.print(")"); Serial.println("");
+        // Get BSSID => Mac Address of the Slave
+        int mac[6];
+        if ( 6 == sscanf(BSSIDstr.c_str(), "%x:%x:%x:%x:%x:%x",  &mac[0], &mac[1], &mac[2], &mac[3], &mac[4], &mac[5] ) ) {
+          for (int ii = 0; ii < 6; ++ii ) {
+            slave.peer_addr[ii] = (uint8_t) mac[ii];
+          }
+        }
+
+        slave.channel = CHANNEL; // pick a channel
+        slave.encrypt = 0; // no encryption
+
+        slaveFound = 1;
+        // we are planning to have only one slave in this example;
+        // Hence, break after we find one, to be a bit efficient
+        break;
+      }
+    }
+  }
+
+  if (slaveFound) {
+    Serial.println("Slave Found, processing..");
+  } else {
+    Serial.println("Slave Not Found, trying again.");
+  }
+
+  // clean up ram
+  WiFi.scanDelete();
+}
+
+// Check if the slave is already paired with the master.
+// If not, pair the slave with master
+bool manageSlave() {
+  if (slave.channel == CHANNEL) {
+    if (DELETEBEFOREPAIR) {
+      deletePeer();
+    }
+
+    Serial.print("Slave Status: ");
+    // check if the peer exists
+    bool exists = esp_now_is_peer_exist(slave.peer_addr);
+    if ( exists) {
+      // Slave already paired.
+      Serial.println("Already Paired");
+      return true;
+    } else {
+      // Slave not paired, attempt pair
+      esp_err_t addStatus = esp_now_add_peer(&slave);
+      if (addStatus == ESP_OK) {
+        // Pair success
+        Serial.println("Pair success");
+        return true;
+      } else if (addStatus == ESP_ERR_ESPNOW_NOT_INIT) {
+        // How did we get so far!!
+        Serial.println("ESPNOW Not Init");
+        return false;
+      } else if (addStatus == ESP_ERR_ESPNOW_ARG) {
+        Serial.println("Invalid Argument");
+        return false;
+      } else if (addStatus == ESP_ERR_ESPNOW_FULL) {
+        Serial.println("Peer list full");
+        return false;
+      } else if (addStatus == ESP_ERR_ESPNOW_NO_MEM) {
+        Serial.println("Out of memory");
+        return false;
+      } else if (addStatus == ESP_ERR_ESPNOW_EXIST) {
+        Serial.println("Peer Exists");
+        return true;
+      } else {
+        Serial.println("Not sure what happened");
+        return false;
+      }
+    }
+  } else {
+    // No slave found to process
+    Serial.println("No Slave found to process");
+    return false;
+  }
+}
+
+void deletePeer() {
+  esp_err_t delStatus = esp_now_del_peer(slave.peer_addr);
+  Serial.print("Slave Delete Status: ");
+  if (delStatus == ESP_OK) {
+    // Delete success
+    Serial.println("Success");
+  } else if (delStatus == ESP_ERR_ESPNOW_NOT_INIT) {
+    // How did we get so far!!
+    Serial.println("ESPNOW Not Init");
+  } else if (delStatus == ESP_ERR_ESPNOW_ARG) {
+    Serial.println("Invalid Argument");
+  } else if (delStatus == ESP_ERR_ESPNOW_NOT_FOUND) {
+    Serial.println("Peer not found.");
+  } else {
+    Serial.println("Not sure what happened");
+  }
+}
+
+uint8_t data = 0;
+// send data
+void sendData() {
+  data++;
+  const uint8_t *peer_addr = slave.peer_addr;
+  Serial.print("Sending: "); Serial.println(data);
+  esp_err_t result = esp_now_send(peer_addr, &data, sizeof(data));
   Serial.print("Send Status: ");
-  //If it was successful
   if (result == ESP_OK) {
     Serial.println("Success");
-  }
-  //if it failed
-  else {
-    Serial.println("Error");
-    Serial.println(result);
+  } else if (result == ESP_ERR_ESPNOW_NOT_INIT) {
+    // How did we get so far!!
+    Serial.println("ESPNOW not Init.");
+  } else if (result == ESP_ERR_ESPNOW_ARG) {
+    Serial.println("Invalid Argument");
+  } else if (result == ESP_ERR_ESPNOW_INTERNAL) {
+    Serial.println("Internal Error");
+  } else if (result == ESP_ERR_ESPNOW_NO_MEM) {
+    Serial.println("ESP_ERR_ESPNOW_NO_MEM");
+  } else if (result == ESP_ERR_ESPNOW_NOT_FOUND) {
+    Serial.println("Peer not found.");
+  } else {
+    Serial.println("Not sure what happened");
   }
 }
 
-//Callback function that gives us feedback about the sent data
+// callback when data is sent from Master to Slave
 void OnDataSent(const uint8_t *mac_addr, esp_now_send_status_t status) {
   char macStr[18];
-  //Copies the receiver Mac Address to a string
   snprintf(macStr, sizeof(macStr), "%02x:%02x:%02x:%02x:%02x:%02x",
            mac_addr[0], mac_addr[1], mac_addr[2], mac_addr[3], mac_addr[4], mac_addr[5]);
-  //Prints it on Serial Monitor
-  Serial.print("Sent to: "); 
-  Serial.println(macStr);
-  //Prints if it was successful or not
-  Serial.print("Status: "); 
-  Serial.println(status == ESP_NOW_SEND_SUCCESS ? "Success" : "Fail");
-  //Sends again
-  send();
+  Serial.print("Last Packet Sent to: "); Serial.println(macStr);
+  Serial.print("Last Packet Send Status: "); Serial.println(status == ESP_NOW_SEND_SUCCESS ? "Delivery Success" : "Delivery Fail");
 }
 
-//We don't do anything on the loop.
-//Every time we receive feedback about the last sent data,
-//we'll be calling the send function again,
-//therefore the data is always being sent
+void setup() {
+  Serial.begin(115200);
+  //Set device in STA mode to begin with
+  WiFi.mode(WIFI_STA);
+  Serial.println("ESPNow/Basic/Master Example");
+  // This is the mac address of the Master in Station Mode
+  Serial.print("STA MAC: "); Serial.println(WiFi.macAddress());
+  // Init ESPNow with a fallback logic
+  InitESPNow();
+  // Once ESPNow is successfully Init, we will register for Send CB to
+  // get the status of Trasnmitted packet
+  esp_now_register_send_cb(OnDataSent);
+}
+
 void loop() {
+  // In the loop we scan for slave
+  ScanForSlave();
+  // If Slave is found, it would be populate in `slave` variable
+  // We will check if `slave` is defined and then we proceed further
+  if (slave.channel == CHANNEL) { // check if slave channel is defined
+    // `slave` is defined
+    // Add slave as peer if it has not been added already
+    bool isPaired = manageSlave();
+    if (isPaired) {
+      // pair success or already paired
+      // Send data to device
+      sendData();
+    } else {
+      // slave pair failed
+      Serial.println("Slave pair failed!");
+    }
+  }
+  else {
+    // No slave found to process
+  }
+
+  // wait for 3seconds to run the logic again
+  delay(3000);
 }
